@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information for encoding and responsivnss-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="../Styles/style.css"><!--Linking the style sheet-->
+    <link rel="stylesheet" href="../Styles/volunteer.css">
+    
+</head>
+<!--Body of the web page-->
+<body>
+    <!--Header section of the page-->
+    <header>
+        <div class="logo"><!--Dev element for the logo that link to home page-->
+            <a href="../html/home.html"><img src="../images/home/Logo.png" alt="Logo"></a>
+        </div>
+        <!--navigation bar-->
+        <nav>
+            <!--Link to each web page-->
+            <ul id="navigations">
+                <li><a href="../html/home.html" >Home</a></li>
+                <li><a href="../html/volunteer.html" class="active">Volunteer</a></li>
+                <li><a href="../html/table.html" >Table</a></li>
+                <li><a href="../html/feedback.html" >Feedback</a></li>
+                <li><a href="../html/sitemap.html" >Sitemap</a></li>
+                <li><a href="../html/team.html" >About Us</a></li> 
+                <li>
+                     <!--Profile Button-->
+                    <div class="mobile-login">
+                        <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                            <span>Profile</span>
+                            <span class="user-icon">
+                            <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                            </span>
+                        </button>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <!--Hamburger menu-->
+        <div class="hamburger-menu">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+        </div> 
+
+        <!--Profile Button-->
+        <div class="profile-btn-container">
+            <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                <span>Profile</span>
+                <span class="user-icon">
+                    <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                </span>
+            </button>
+        </div>
+    </header>
+    <!--Main section of the web page-->
+    <main>
+        <!-- Scrollable Information Section -->
+        <section class="volunteer-programs">
+            <h1>Explore Volunteering Programs</h1>
+            <!-- Dropdown for Sorting/Filtering -->
+            <div class="filter-dropdown">
+                <label for="sort">Sort By:</label>
+                <select id="sort" name="sort">
+                    <option value="popular">Most Popular</option>
+                    <option value="newest">Newest</option>
+                    <option value="rating">Highest Rating</option>
+                </select>
+            </div>
+            <!-- Cards for Volunteering Programs -->
+            <div class="program-cards">
+                <!-- Card 1 -->
+                <div class="program-card">
+                    <img src="../images/volunteer/teaching.jpg" alt="Teaching Program">
+                    <h2>Teaching in Rural Schools</h2>
+                    <p>Volunteer to teach children in underprivileged rural areas, providing them with quality education, essential skills, and mentorship to help bridge the education gap and create better opportunities for their future success.</p>
+                    <div class="program-buttons">
+                        <button class="signup-btn">Volunteer</button>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="program-card">
+                    <img src="../images/volunteer/digital-literacy.jpg" alt="Digital Literacy Program">
+                    <h2>Digital Literacy Program</h2>
+                    <p>Empower students with essential digital skills, equipping them to navigate the modern world, enhance their career opportunities, and thrive in an increasingly technology-driven society.</p>
+                    <div class="program-buttons">
+                        <button class="signup-btn">Volunteer</button>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="program-card">
+                    <img src="../images/volunteer/mentorship.jpg" alt="Mentorship Program">
+                    <h2>Student Mentorship</h2>
+                    <p>Provide guidance and mentorship to students, helping them build confidence, overcome challenges, and achieve their academic and career goals through personalized support and encouragement.</p>
+                    <div class="program-buttons">
+                        <button class="signup-btn">Volunteer</button>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="program-card">
+                    <img src="../images/volunteer/library.jpg" alt="Library Development Program">
+                    <h2>Library Development</h2>
+                    <p>Support the establishment and management of school libraries to foster a culture of reading, enhance literacy skills, and provide students with access to diverse educational resources.</p>
+                    <div class="program-buttons">
+                        <button class="signup-btn">Volunteer</button>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="program-card">
+                    <img src="../images/volunteer/community-outreach.jpg" alt="Community Outreach Program">
+                    <h2>Community Outreach</h2>
+                    <p>Collaborate with local communities to raise awareness about Sustainable Development Goals (SDGs), promote education, and encourage active participation in initiatives that drive long-term positive change.</p>
+                    <div class="program-buttons">
+                        <button class="signup-btn">Volunteer</button>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="program-card">
+                    <img src="../images/volunteer/health-education.jpg" alt="Health Education Program">
+                    <h2>Health Education</h2>
+                    <p>Educate students on essential health, hygiene, and wellness practices to enhance their overall well-being, prevent illnesses, and empower them to lead healthier, more informed lives.</p>
+                    <div class="program-buttons">
+                        <button class="signup-btn">Volunteer</button>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Ratings and Reviews Section -->
+        <section class="user-reviews">
+            <h1>User Ratings & Reviews</h1>
+            <!-- Overall Rating Summary -->
+            <div class="rating-summary">
+                <h2>9.4/10 <span>Exceptional</span></h2>
+                <p>Based on 1,234 reviews</p>
+            </div>
+            <!-- Individual Reviews -->
+            <div class="review-cards">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <h3>⭐⭐⭐⭐⭐ 5/5</h3>
+                    <p>"Teaching in rural schools was a life-changing experience. The children were so eager to learn!"</p>
+                    <a href="#">See More</a>
+                    <p class="reviewer">- John Doe, 15 Oct 2023</p>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <h3>⭐⭐⭐⭐ 4/5</h3>
+                    <p>"The digital literacy program is well-organized, but more resources could be provided."</p>
+                    <a href="#">See More</a>
+                    <p class="reviewer">- Jane Smith, 10 Oct 2023</p>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <h3>⭐⭐⭐⭐⭐ 5/5</h3>
+                    <p>"Mentoring students was incredibly rewarding. I highly recommend this program!"</p>
+                    <a href="#">See More</a>
+                    <p class="reviewer">- Alice Johnson, 5 Oct 2023</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Adder Section -->
+        <section class="review-adder">
+            <h2>Share Your Experience</h2>
+            <form id="review-form">
+                <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+                <div class="form-buttons">
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                    <button type="reset" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!--Footer the the page-->
+    <footer class="footer" id="footer">
+        <div class="global-footer">
+            <div class="footer-section"><!--Use div element for the sections for each prt-->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/home.html" >Home</a></li>
+                    <li><a href="../html/volunteer.html">Volunteer</a></li>
+                    <li><a href="../html/table.html">Table</a></li>
+                    <li><a href="../html/feedback.html" >Feedback</a></li>
+                    <li><a href="../html/sitemap.html">Sitemap</a></li>
+                    <li><a href="../html/team.html">About Us</a></li>
+                    <li><a href="../html/profile.html">User Profile</a></li>        
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Team</h3>
+                <ul>
+                    <!--Link each team member editor page-->
+                    <li><a href="../html/pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="../html/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="../html/pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="../html/pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Page Editor</h3>
+                <ul>
+                    <li><a href="../html/pageEditor_ST1.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/1223706751502130" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdg.goal4/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12785096/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@gmail.com</li>
+                    <li>Phone: 0705362187</li>
+                    <li>Addres: Colombo 7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quality Education. All rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script><!--Linking the cdn file for social media icons-->
+    <script src="../js/script.js"></script><!--Linking the javascript file-->
+
+</body>
+</html>

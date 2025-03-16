@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for encoding and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Education</title>
+    <link rel="stylesheet" href="../Styles/style.css"> <!-- Linking the main style sheet -->
+    <link rel="stylesheet" href="../Styles/splash_screen.css"> <!-- Linking the splash screen style sheet -->
+</head>
+<body>
+    <!-- Splash screen -->
+    <div id="splash-screen">
+        <img src="../images/home/Logo.png" alt="Logo">
+        <h1>Empowering Minds, Shaping Futures.</h1>
+        <h2><u>Group Member</u></h2>
+        <p>Umesh Isuranga</p>
+        <p>Tharun Devaraja</p>
+        <p>Dulaj Yuthsara</p>
+        <p>Vihanga Visalka</p>
+    </div>
+    <main>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        // Splash screen functionality
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('splash-screen').style.display = 'none';
+                window.location.href = "../html/home.html"; // Redirect to home page
+            }, 4000); // 4000ms = 4 seconds
+        });
+    </script>
+</body>
+</html>

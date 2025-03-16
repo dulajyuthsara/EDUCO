@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information for encoding and responsivnss-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap</title>
+    <link rel="stylesheet" href="../Styles/style.css"><!--Linking the style sheet-->
+    <link rel="stylesheet" href="../Styles/sitemap.css">
+    
+</head>
+<!--Body of the web page-->
+<body>
+    <!--Header section of the page-->
+    <header>
+        <div class="logo"><!--Dev element for the logo that link to home page-->
+            <a href="../html/home.html"><img src="../images/home/Logo.png" alt="Logo"></a>
+        </div>
+        <!--navigation bar-->
+        <nav>
+            <!--Link to each web page-->
+            <ul id="navigations">
+                <li><a href="../html/home.html" >Home</a></li>
+                <li><a href="../html/volunteer.html" >Volunteer</a></li>
+                <li><a href="../html/table.html" >Table</a></li>
+                <li><a href="../html/feedback.html" >Feedback</a></li>
+                <li><a href="../html/sitemap.html" class="active">Sitemap</a></li>
+                <li><a href="../html/team.html" >About Us</a></li> 
+                <li>
+                     <!--Profile Button-->
+                    <div class="mobile-login">
+                        <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                            <span>Profile</span>
+                            <span class="user-icon">
+                            <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                            </span>
+                        </button>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <!--Hamburger menu-->
+        <div class="hamburger-menu">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+        </div> 
+
+        <!--Profile Button-->
+        <div class="profile-btn-container">
+            <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                <span>Profile</span>
+                <span class="user-icon">
+                    <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                </span>
+            </button>
+        </div>
+    </header>
+    <!--Main section of the web page-->
+    <!-- Main content -->
+    <main>
+        <!-- Main content - properly centered and separated from navbar -->
+        <div class="sitemap-container">
+            <div class="sitemap-content">
+                <h1 class="sitemap-title">SITEMAP</h1>            
+                <div class="svg-container">
+                    <svg id="sitemap-svg" viewBox="0 0 1000 750" >
+                        
+                        <!-- Connections/Lines -->
+                        <g class="connections">
+                            <!-- Home to primary nodes -->
+                            <line x1="500" y1="100" x2="200" y2="200" class="connection-line" />
+                            <line x1="500" y1="100" x2="400" y2="200" class="connection-line" />
+                            <line x1="500" y1="100" x2="600" y2="200" class="connection-line" />
+                            <line x1="500" y1="100" x2="800" y2="200" class="connection-line" />
+                            
+                            <!-- Home to secondary nodes -->
+                            <line x1="500" y1="100" x2="500" y2="300" class="connection-line" />
+                            <line x1="500" y1="300" x2="500" y2="370" class="connection-line" />
+                            <line x1="500" y1="370" x2="500" y2="440" class="connection-line" />
+                            <line x1="500" y1="440" x2="500" y2="510" class="connection-line" />
+                            <line x1="500" y1="510" x2="500" y2="580" class="connection-line" />
+                            
+                            <!-- About us to team members -->
+                            <line x1="800" y1="200" x2="800" y2="300" class="connection-line" />
+                            <line x1="800" y1="300" x2="800" y2="370" class="connection-line" />
+                            <line x1="800" y1="370" x2="800" y2="440" class="connection-line" />
+                            <line x1="800" y1="440" x2="800" y2="510" class="connection-line" />
+                        </g>
+                        
+                        <!-- Nodes -->
+                        <g class="nodes">
+                            <!-- Main home node -->
+                            <a href="../html/home.html" class="node-link" role="link" aria-label="Home page">
+                                <circle cx="500" cy="100" r="50" class="node home-node" />
+                                <text x="500" y="100" text-anchor="middle" dominant-baseline="middle" class="node-text">Home</text>
+                            </a>
+                            
+                            <!-- Primary level nodes -->
+                            <a href="../html/volunteer.html" class="node-link" role="link" aria-label="Volunteer page" >
+                                <ellipse cx="200" cy="200" rx="70" ry="30" class="node" />
+                                <text x="200" y="200" text-anchor="middle" dominant-baseline="middle" class="node-text">Volunteer</text>
+                            </a>
+                            
+                            <a href="../html/feedback.html" class="node-link" role="link" aria-label="Feedback page">
+                                <ellipse cx="400" cy="200" rx="70" ry="30" class="node" />
+                                <text x="400" y="200" text-anchor="middle" dominant-baseline="middle" class="node-text">Feedback</text>
+                            </a>
+                            
+                            <a href="../html/profile.html" class="node-link" role="link" aria-label="User Profile page">
+                                <ellipse cx="600" cy="200" rx="70" ry="30" class="node" />
+                                <text x="600" y="200" text-anchor="middle" dominant-baseline="middle" class="node-text">User Profile</text>
+                            </a>
+                            
+                            <a href="../html/team.html" class="node-link" role="link" aria-label="About us page">
+                                <ellipse cx="800" cy="200" rx="70" ry="30" class="node" />
+                                <text x="800" y="200" text-anchor="middle" dominant-baseline="middle" class="node-text">About us</text>
+                            </a>
+                            
+                            <!-- Secondary level nodes -->
+                            <a href="../html/content_ST1.html" class="node-link" role="link" aria-label="Targets page">
+                                <ellipse cx="500" cy="300" rx="70" ry="30" class="node" />
+                                <text x="500" y="300" text-anchor="middle" dominant-baseline="middle" class="node-text">Targets</text>
+                            </a>
+                            
+                            <a href="../html/content_ST2.html" class="node-link" role="link" aria-label="Things To Do page">
+                                <ellipse cx="500" cy="370" rx="70" ry="30" class="node" />
+                                <text x="500" y="370" text-anchor="middle" dominant-baseline="middle" class="node-text">Things To Do</text>
+                            </a>
+                            
+                            <a href="../html/content_ST3.html" class="node-link" role="link" aria-label="Education Initiatives page">
+                                <ellipse cx="500" cy="440" rx="90" ry="30" class="node" />
+                                <text x="500" y="440" text-anchor="middle" dominant-baseline="middle" class="node-text">Education Initiatives</text>
+                            </a>
+                            
+                            <a href="./content_ST4.html" class="node-link" role="link" aria-label="News page">
+                                <ellipse cx="500" cy="510" rx="70" ry="30" class="node" />
+                                <text x="500" y="510" text-anchor="middle" dominant-baseline="middle" class="node-text">News</text>
+                            </a>
+                            
+                            <a href="../html/table.html" class="node-link" role="link" aria-label="Table page">
+                                <ellipse cx="500" cy="580" rx="70" ry="30" class="node" />
+                                <text x="500" y="580" text-anchor="middle" dominant-baseline="middle" class="node-text">Table</text>
+                            </a>
+                            
+                            <!-- Team member nodes -->
+                            <a href="../html/pageEditor_ST2.html" class="node-link" role="link" aria-label="Umesh Isuranga profile page">
+                                <ellipse cx="800" cy="300" rx="80" ry="30" class="node" />
+                                <text x="800" y="300" text-anchor="middle" dominant-baseline="middle" class="node-text">Umesh Isuranga</text>
+                            </a>
+                            
+                            <a href="../html/pageEditor_ST3.html" class="node-link" role="link" aria-label="Dulaj Yuthsara profile page">
+                                <ellipse cx="800" cy="370" rx="80" ry="30" class="node" />
+                                <text x="800" y="370" text-anchor="middle" dominant-baseline="middle" class="node-text">Dulaj Yuthsara</text>
+                            </a>
+                            
+                            <a href="../html/pageEditor_ST1.html" class="node-link" role="link" aria-label="Vihanga Visalka profile page">
+                                <ellipse cx="800" cy="440" rx="80" ry="30" class="node" />
+                                <text x="800" y="440" text-anchor="middle" dominant-baseline="middle" class="node-text">Vihanga Visalka</text>
+                            </a>
+                            
+                            <a href="../html/pageEditor_ST4.html" class="node-link" role="link" aria-label="Tharun Devaraja profile page">
+                                <ellipse cx="800" cy="510" rx="80" ry="30" class="node" />
+                                <text x="800" y="510" text-anchor="middle" dominant-baseline="middle" class="node-text">Tharun Devaraja</text>
+                            </a>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer the the page-->
+    <footer class="footer" id="footer">
+        <div class="global-footer">
+            <div class="footer-section"><!--Use div element for the sections for each prt-->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/home.html" >Home</a></li>
+                    <li><a href="../html/volunteer.html">Volunteer</a></li>
+                    <li><a href="../html/table.html">Table</a></li>
+                    <li><a href="../html/feedback.html" >Feedback</a></li>
+                    <li><a href="../html/sitemap.html">Sitemap</a></li>
+                    <li><a href="../html/team.html">About Us</a></li>
+                    <li><a href="../html/profile.html">User Profile</a></li>        
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Team</h3>
+                <ul>
+                    <!--Link each team member editor page-->
+                    <li><a href="../html/pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="../html/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="../html/pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="../html/pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Page Editor</h3>
+                <ul>
+                    <li><a href="../html/pageEditor_ST4.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/1223706751502130" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdg.goal4/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12785096/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@gmail.com</li>
+                    <li>Phone: 0705362187</li>
+                    <li>Addres: Colombo 7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quality Education. All rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script><!--Linking the cdn file for social media icons-->
+    <script src="../js/script.js"></script><!--Linking the javascript file-->
+    <link rel="stylesheet" href="../js/sitemap.js">
+
+</body>
+</html>

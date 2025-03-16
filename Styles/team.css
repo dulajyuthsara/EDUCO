@@ -1,0 +1,167 @@
+/*Additional css for team page*/
+:root{
+    --primary-color:#A40033;
+    --secondary-color:#c5192D;
+    --text-color:#ecf0f1;
+    --background-color:rgba(0, 0, 0, 0.9);
+    --color_01:#D50032;
+    --color_02:#f63c3ce0;
+    --button-color01:#c5192D;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background_image.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #f00606;
+}
+
+.container {
+    padding: 30px;
+}
+.container p {
+    color: white;
+    font-size: 22px;
+}
+.container h1{
+    color: #ff002fdd;
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.teamsection {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.teammember {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+}
+
+.teammember img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.teammember:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+.details {
+    position: absolute;
+    bottom: -90px;
+    left: 50%;
+    width: 100%;
+    max-width: 200px;
+    background: #d32b2b;
+    color: rgb(228, 187, 187);
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(64, 12, 12, 0.2);
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.teammember:hover .details {
+    opacity: 1;
+    bottom: -110px;
+}
+
+.details h3 {
+    color: #f7baba;
+    margin-bottom: 5px;
+}
+
+.details p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.details ul {
+    padding-left: 15px;
+    font-size: 14px;
+}
+.namelabel{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .teamsection {
+        gap: 20px;
+    }
+    
+    .teammember {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .teamsection {
+        gap: 15px;
+    }
+    
+    .teammember {
+        width: 150px;
+        margin-bottom: 140px;
+    }
+    
+
+    .details {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .teamsection {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .teammember {
+        width: 80%;
+        max-width: 250px;
+    }
+}

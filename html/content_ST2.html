@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information for encoding and responsivnss-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to do</title>
+    <link rel="stylesheet" href="../Styles/style.css"><!--Linking the style sheet-->
+    <link rel="stylesheet" href="../Styles/content_ST2.css">
+</head>
+<!--Body of the web page-->
+<body>
+    <header>
+        <div class="logo"><!--Dev element for the logo that link to home page-->
+            <a href="../html/home.html"><img src="../images/home/Logo.png" alt="Logo"></a>
+        </div>
+        <!--navigation bar-->
+        <nav>
+            <!--Link to each web page-->
+            <ul id="navigations">
+                <li><a href="../html/home.html" class="active">Home</a></li>
+                <li><a href="../html/volunteer.html" >Volunteer</a></li>
+                <li><a href="../html/table.html" >Table</a></li>
+                <li><a href="../html/feedback.html" >Feedback</a></li>
+                <li><a href="../html/sitemap.html" >Sitemap</a></li>
+                <li><a href="../html/team.html" >About Us</a></li> 
+                <li>
+                     <!--Profile Button-->
+                    <div class="mobile-login">
+                        <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                            <span>Profile</span>
+                            <span class="user-icon">
+                            <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                            </span>
+                        </button>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <!--Hamburger menu-->
+        <div class="hamburger-menu">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+        </div> 
+
+        <!--Profile Button-->
+        <div class="profile-btn-container">
+            <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                <span>Profile</span>
+                <span class="user-icon">
+                    <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!--Main section of the web page-->
+    <main>
+        <section class="thingsToDo" id="thingsToDoID">
+            <h1>THINGS TO DO IN EDUCATION</h1>
+            <p>Quality education is more than just attending classes. It involves different activities that improve learning experiences and personal growth. Explore these activities to make the best of your educational journey<sup><a href="../html/pageEditor_ST2.html#ref6" id="cite1">[6]</a></sup></p>
+            <div class="internalN">
+                <h2>Quick Navigations</h2><!--Quick navigation-->
+                <ul>
+                    <li><a href="#academic">Academic Activities</a></li><!--Link the sectors for the internal navigation-->
+                    <li><a href="#extracurricular">Extracurricular Activities</a></li>
+                    <li><a href="#community">Community Engagement</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-container" id="academic" role="region" aria-labelledby="academic"><!--Divide section for the academic activities-->
+            <h2>Academic Activities</h2>
+            <p id="act-para-academic">Engage in activities that go beyond traditional education and promote learning opportunities for all.</p>
+            <div class="activity-container">
+                <div class="container-items">
+                    <h3>Free Online Learning Platforms</h3>
+                    <img src="../images/content/ST2/freeonline.jpg" alt="groups" class="activity-img"><!-- Image for the ccontent -->
+                    <p>Learn with the free platforms like Coursera, edX and udemy to improve your skills and education without the financial .</p>
+                    <br>
+                    <ul>
+                        <li><b>Benefit from recognized courses:</b> Many platforms offer courses that are recognized by employers, allowing you to showcase your skills and learn new things</li>
+                        <li><b>Learn at your own pace:</b> Online learning platforms offer flexible schedules, allowing you to learn any time as you wish at home.</li>
+                        <li><b>Access a variety of subjects:</b>You can learn anything like professional skills, learn a new language, or gain knowledge in cutting-edge topics like data science and artificial intelligence.</li>
+                    </ul>
+                    <br>
+                    <h3><b>Why Should You Use Online Learning Platforms?</b></h3>
+                    <ul>
+                        <li><b>Accessibility:</b>Online platforms make education accessible to individuals worldwide.</li>
+                        <li><b>Diverse Learning Styles:</b> There are many platforms offer various learning formats like video lectures, quizzes and books provide different learning styles.</li>
+                        <li><b>Affordable Education:</b>Online courses are often more affordable than other learning options, also this allowing for better education without price tag.</li>
+                    </ul>
+                </div>
+                <div class="container-items">
+                    <h3>Volunteer for Educational Programs</h3>
+                    <img src="../images/content/ST2/voluntrgrp.jpg" alt="research" class="activity-img">
+                    <p>Provide <b>tutoring or mentorship</b> to children, adults, or individuals to become success in their life.</p>
+                    <br>
+                    <ul>
+                        <li><b>Volunteer with Schools or Community Centers:</b>Many organizations are looking for volunteers to work in after schools tutoring programs or literacy workshops.</li>
+                        <li><b>Mentorship for Growth: </b> Offering mentorship can help others through difficult academic subjects and inspire them to follow their educational and career goals.</li>
+                    </ul>
+                    <br>
+                    <h3>Examples of Educational Volunteer Programs:</h3>
+                    <ul>
+                        <li><b>Local School Tutoring Programs:</b>Many schools do after-school programs where you can teach to students in any subjects like maths, reading and science.</li>
+                        <li><b>Mentorship Programs: </b> Offer one-on-one tutoring and mentorship to children who are from low-income families.</li>
+                    </ul>
+                    <br>
+                    <h3>Benefits of Volunteering:</h3>
+                    <ul>
+                        <li><b>Gain Teaching Experience:</b>Volunteering can be a great way to build your teaching and leadership experience.</li>
+                        <li><b>Develop New Skills:</b>Volunteering can help you develop critical skills like communication, problem-solving, and time management, which are valuable in any career.</li>
+                    </ul>
+                    <a href="../html/volunteer.html" class="internalLink">Learn More About Volunteering</a><!--Internal link for the volunteering page-->
+                </div>
+            </div>
+        </section>
+
+        <section class="content-container" id="extracurricular" role="region" aria-labelledby="extracurricular"><!--Divide section for the Extracurricular activities-->
+            <h2>Extracurricular Activities</h2>
+            <p id="act-para-extra">Get involved in extracurricular activities that complement formal education and foster community development.</p>
+            <div class="activity-container">
+                <div class="container-items">
+                    <h3>Organize Fundraisers for Education</h3>
+                    <img src="../images/content/ST2/fundrisd.avif" alt="sports" class="activity-img">
+                    <p>Fundraising events play a key role in supporting educational initiatives. Whether it,s for scholarships, school supplies, or providing access to learning materials, organizing fundraisers can make a significant impact. These activities help raise awareness about the importance of education.</p>
+                    <br>
+                    <h3>How you Can Help:</h3>
+                    <ul>
+                        <li>Partner with local organizations to create fundraising events.</li>
+                        <li>Inspire your network to donate items like books, uniforms, or learning materials.</li>
+                    </ul>
+                </div>
+                <div class="container-items">
+                    <h3>Support Local Education Initiatives</h3>
+                    <img src="../images/content/ST2/support.jpg" alt="Education initiatives" class="activity-img">
+                    <p>Supporting local education initiatives is an excellent way to contribute to your community. Volunteering at local schools or community centers can help provide resources, guidance, and support to students who need it most. Your time and expertise can make a significant difference in shaping the future of young learners.</p>
+                    <a href="../html/content_ST3.html" class="internalLink">Learn More Education Initiatives</a><!--Internal link for the Education Initiatives page-->
+                    <h3>How you Can Help:</h3>
+                    <ul>
+                        <li>Volunteer to teach or tutor students after school hours.</li>
+                        <li>Partner with local community organizations to run educational workshops for students.</li>
+                        <li>Help organize educational events, such as book drives, to support schools and libraries in your area.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="content-container" id="community" role="region" aria-labelledby="Community"><!--Divide section for the community-->
+            <h2>Community Engagments</h2>
+            <p id="act-para-community">Connect with the wider community through these activities that promote social responsibility and practical learning.</p>
+            <div class="activity-container">
+                <div class="container-items">
+                    <h3>Donate School Supplies</h3>
+                    <img src="../images/content/ST2/schoolsupply.jpg" alt="Donate School Supplies" class="activity-img">
+                    <p>Donate school supplies, such as books, stationery, and uniforms, to underfunded schools to help improve the learning experience for students.</p>
+                    <br>
+                    <h3>Community Impacts:</h3>
+                    <ul>
+                        <li>School supply donations can make a significant difference in the education of needful children, helping them attend school with the unoforms.</li> 
+                        <li>By donating, you are contributing to closing the education gap and ensuring that all students have equal access to learning resources.</li>
+                    </ul>
+                    <h3>Support for Education:</h3>
+                    <ul>
+                        <li>Donating school supplies to students in need provides them with a fair chance to succeed academically.</li>
+                        <li>Donations can be made through local schools, community centers, or charity organizations, which directly benefit students.</li>
+                    </ul>
+                </div>
+                <div class="container-items">
+                    <h3>Promote Digital Literacy</h3>
+                    <img src="../images/content/ST2/promote.jpg" alt="digital literacy" class="activity-img">
+                    <p>Help others by teaching digital literacy, enabling them to access online learning platforms, educational tools, and improve their tech skills.</p>
+                    <br>
+                    <h3>Skills for Success:</h3>
+                    <ul>
+                        <li>By teaching digital literacy, you are preparing individuals for the workforce by equipping them with the skills needed to use computers, the internet, and essential software tools.</li> 
+                        <li>You empower others to access online learning platforms, thereby enhancing their education and future career prospects.</li>
+                    </ul>
+                    <br>
+                    <h3>Benefits of Promoting Diigital Literacy:</h3>
+                    <ul>
+                        <li><b>Increased Access to Opportunities:</b>Digital literacy opens doors to educational resources, job applications, and professional development opportunities.</li>
+                        <li><b>Empowerment Through Education:</b>Teaching digital skills helps individuals access the information they need to make informed decisions about their education and careers.</li>
+                        <li><b>Bridge the Digital Divide:</b>Promoting digital literacy ensures that no one is left behind as technology becomes increasingly important in all aspects of life.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <a href="#thingsToDoID" id="GoToTop" class="Top-btn" role="link" aria-label="Go to the top of the page">Go To Top</a>
+    </main>
+
+    <!--Footer the the page-->
+    <footer class="footer" id="footer">
+        <div class="global-footer">
+            <div class="footer-section"><!--Use div element for the sections for each prt-->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/home.html" >Home</a></li>
+                    <li><a href="../html/volunteer.html">Volunteer</a></li>
+                    <li><a href="../html/table.html">Table</a></li>
+                    <li><a href="../html/feedback.html" >Feedback</a></li>
+                    <li><a href="../html/sitemap.html">Sitemap</a></li>
+                    <li><a href="../html/team.html">About Us</a></li>
+                    <li><a href="../html/profile.html">User Profile</a></li>        
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Team</h3>
+                <ul>
+                    <!--Link each team member editor page-->
+                    <li><a href="../html/pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="../html/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="../html/pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="../html/pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Page Editor</h3>
+                <ul>
+                    <li><a href="../html/pageEditor_ST2.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/1223706751502130" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdg.goal4/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12785096/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@gmail.com</li>
+                    <li>Phone: 0705362187</li>
+                    <li>Addres: Colombo 7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quality Education. All rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script><!--Linking the cdn file for social media icons-->
+    <script src="../js/script.js"></script><!--Linking the javascript file-->
+    <script src="../js/content_ST2.js"></script>
+
+</body>
+</html>

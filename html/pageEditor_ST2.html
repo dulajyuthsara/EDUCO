@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information for encoding and responsivnss-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umesh</title>
+    <link rel="stylesheet" href="../Styles/style.css"><!--Linking the style sheet-->
+    <link rel="stylesheet" href="../Styles/pageEditor_validator_ST2.css">
+</head>
+<!--Body of the web page-->
+<body>
+    <!--Header section of the page-->
+    <header>
+        <div class="logo"><!--Dev element for the logo that link to home page-->
+            <a href="../html/home.html"><img src="../images/home/Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <!--Link to each web page-->
+            <ul id="navigations">
+                <li><a href="../html/home.html" class="active">Home</a></li>
+                <li><a href="../html/volunteer.html" >Volunteer</a></li>
+                <li><a href="../html/table.html" >Table</a></li>
+                <li><a href="../html/feedback.html" >Feedback</a></li>
+                <li><a href="../html/sitemap.html" >Sitemap</a></li>
+                <li><a href="../html/team.html" >About Us</a></li> 
+                <li>
+                     <!--Profile Button-->
+                    <div class="mobile-login">
+                        <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                            <span>Profile</span>
+                            <span class="user-icon">
+                            <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                            </span>
+                        </button>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <!--Hamburger menu-->
+        <div class="hamburger-menu">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+        </div> 
+
+        <!--Profile Button-->
+        <div class="profile-btn-container">
+            <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                <span>Profile</span>
+                <span class="user-icon">
+                    <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                </span>
+            </button>
+        </div>
+    </header>
+    <!--Main section of the web page-->
+    <div class="Student-details">
+        <section class="stud">
+                <h2>P.A.Umesh Isuranga</h2>
+                <h2>Student 2</h2>
+                <h2>w2120218 / 20231719</h2>
+            </div>
+            
+        </section>
+    </div>
+        <!-- Main content area -->
+    <main class="PE-main" id="top">
+        <div class="editor_container" >
+            <aside class="aside-div">
+                <section class="aside-section">
+                    <h3>Core pages developed:</h3><br>
+                    <ul class="top-level-ul">
+                        <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                        <li class="Student">Student 1</li>
+                            <ul> 
+                                <li><a href="../html/pageEditor_ST1.html#splash">Splash page</a></li>
+                                <li><a href="../html/pageEditor_ST1.html#volunteer">Volunteer page</a></li>
+                                <li><a href="../html/pageEditor_ST1.html#content">Content page</a></li><br>
+                            </ul>
+                        <li class="Student">Student 2</li>
+                            <ul>
+                                <li><a href="#home">Home page </a></li>
+                                <li><a href="#table">Table page</a></li>
+                                <li><a href="#content">Content page</a></li><br>
+                            </ul>
+                        <li class="Student">Student 3</li>
+                            <ul>
+                                <li><a href="../html/pageEditor_ST3.html#feedback">Feedback page</a> </li>
+                                <li><a href="../html/pageEditor_ST3.html#Team">Team page</a></li>
+                                <li><a href="../html/pageEditor_ST3.html#content">Content page</a></li><br>
+                            </ul>
+                        <li class="Student">Student 4</li>
+                            <ul>
+                                <li><a href="../html/pageEditor_ST4.html#profile">Profile page </a></li>
+                                <li><a href="../html/pageEditor_ST4.html#sitmap">Sitemap page</a></li>
+                                <li><a href="../html/pageEditor_ST4.html#content">Content page</a></li><br>
+                            </ul>
+                        <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                        <li><a href="#compliance">Compliance</a></li>
+                        <li><a href="#ref">References</a></li>
+                    </ul>
+                </section>
+            </aside>
+            
+            <div class="main-content">
+                <section class="PE-section">
+                    <h2 id="home">Home Page</h2><br>
+                        <h3>Technical Description</h3>
+                            <p>I used HTML and CSS to design this page.I use flexbox and grid layout to get the proper aligments and proper responsive layout of elements.I impliment the Hamburger button with JavaScript to the mobile responsivness along with the template for whole website.I designed four cards with proper hover effects that are directly link to the four content pages from the home page.</p><br>
+                            <h3 class="techniques">HTML Techniques I used:</h3>
+                            <ul class="techniques-List">
+                                <li><span>&lt;header&gt; :</span>the Header of the page contains the website logo,navigation bar and the profile button.This header i have made is in all over the website along with template.</li>
+                                <li><span>&lt;section class="intro"&gt; :</span>This creates a attractive hero section with the heading, paragraph and a button that link to the Table page.</li>
+                                <li><span>&lt;section class="content-card-section"&gt; :</span>This section implement the cards that link to the content pages of the different aspects of quality education. </li>
+                                <li><span>&lt;section class="Mission and Vision"&gt; :</span>Mission and the Vision of the website displayes in this section in a distincr manner.</li>
+                                <li><span>&lt;footer&gt; :</span>This use to implement the footer of the website that include the Quick links, Team, page editor,social meadias and the contact us details.</li>
+                            </ul><br>
+                            <h3 class="techniques">CSS Techniques I used:</h3>
+                            <ul class="techniques-List">
+                                <li><span>Hover effects :</span>To increase the user interaction i use unique and simple hover effects to cards,buttons,navigation bar and for the footer.</li>
+                                <li><span>Flexbox Layout :</span>I used this layout for intro section, card containers and to mission & vision container to creat responsive designs that adjust with different screen sizes.</li>
+                                <li><span>:root Variables :</span>Use :root variables to maintain the color scheme.</li>
+                                <li><span>media queries :</span>Ensure that the page is responsive for mobile, tablet and dekstop.</li>
+                                <li><span>Transitions :</span>I added smooth and simple transitions to interactive elements for better user experience.</li>
+                            </ul><br>
+                        <h3>Accessibility<sup><a href="#ref2" id="cite1">[2]</a></sup></h3>
+                            <ol class="Accessibility">
+                                <div class="Accessibility-Image">
+                                    <img src="../images/pageEditor/ST2/WaveHome.png" alt="Accessibility-Image">
+                                </div>
+                                <p>(In the above image show three errors that not contating any text in the link but there are icons for social media So we wont text to here but the error is occuring.)</p>
+                                <li>Image ALT Text</li>
+                                <p>I implement descriptive alt text to all images that I have been used.This is helps for the screen readers to understahd the content of the image even if image cannot see.</p>
+                                <li>Semantic HTML</li>
+                                <p> I used appropriate HTML tags such as &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;. These tags provide meaning to the content structure</p>
+                                <li>Keyboard Navigation</li>
+                                <p>This web page is fully navigable using keyboard.All interactive elements, such as buttons, links and similar elements are accessible with the "Tab" key and enter key.</p>
+                                <li>Responsive Design</li>
+                                <p>The use of media queries ensures the page is responsive, adjusting its layout across different devices, including mobile, tablet, and desktop screens. This supports users who may need to adjust the view for better visibility or touch accessibility.</p>
+                            </ol>
+                        <h3>Link to the validation page</h3> 
+                            <p><a href="../html/validation_ST2.html#homeVal" >Home page validation</a></p><br>
+                        <h3>Link to the page</h3>
+                            <p><a href="../html/home.html"  target="_blank">Home Page</a></p>
+                </section>
+                <section class="PE-section" >
+                    <h2 id="table">Table Page</h2><br>
+                        <h3>Technical Description</h3>
+                            <p>The table page focus on "Education for Sustainable Development" and provide the regional quality edication indicators in well structured format.I used HTML,CSS to design the homepage. i designed the page using HTML tabel elements such as &lt;table&gt;,&lt;tr&gt;,&lt;th&gt;,&lt;td&gt;,&lt;th&gt;.The table has a responsiveness which I achieved using CSS media queries.I used hover effects on rows, highlighting them when users hover their mouse over them.I utilized CSS Flexbox and Grid where appropriate to ensure the table is neatly aligned and the page maintains a responsive structure. In here I use tooltip option when hover the thumbnail image to give user more accesible. </p><br>
+                            <h3 class="techniques">HTML Techniques I used:</h3>
+                            <ul class="techniques-List">
+                                <li><span>&lt;table&gt; :</span>Implement a structured data representation with 10 rows and 5 columns for education metrrics by region </li>
+                                <li><span>&lt;div class = "table-container"&gt; :</span>Create div container for responsivness of the table,.</li>
+                                <li><span>&lt;section class="content-card-section"&gt; :</span>This section implement the cards that link to the content pages of the different aspects of quality education. </li>
+                                <li><span>&lt;th,tr,td&gt; :</span>Use table headings,rows and data to implement the page.</li>
+                            </ul><br>
+                            <h3 class="techniques">CSS Techniques I used:</h3>
+                            <ul class="techniques-List">
+                                <li><span>Hover effects :</span>Each row change it's background color to #FCE7E9 on hover to give better user experience.</li>
+                                <li><span>Table style :</span>Style with custom style for cells,headers and rows with alternating row colors.</li>
+                                <li><span>Interactive Tooltips :</span>Implement tooltip for table header images with descriptive informations.</li>
+                                <li><span>Visual Indicators :</span>I use color coded icons like Good - green,Warning - orange and danger - red to quick undestandings.</li>
+                                <li><span>Box shadow :</span>I use box shadow to get a visual depth of the table</li>
+                            </ul><br>
+                        <h3>Accessibility<sup><a href="#ref2" id="cite1">[2]</a></sup></h3>
+                            <ol class="Accessibility">
+                                <div class="Accessibility-Image">
+                                    <img src="../images/pageEditor/ST2/waveTable.png" alt="Accessibility-Image">
+                                </div>
+                                <p>(In the above image show three errors that not contating any text in the link but there are icons for social media So we wont text to here but the error is occuring.)</p>
+                                <li>Image ALT Text</li>
+                                <p>I implement descriptive alt text to all images that I have been used.This is helps for the screen readers to understahd the content of the image even if image cannot see.</p>
+                                <li>Accessible Table Headers</li>
+                                <p>Each column header provides a description of the data contained within the table cells. This helps screen reader users understand what each column represents.</p>
+                                <li>Semantic HTML</li>
+                                <p> I used appropriate HTML tags such as &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,&lt;footer&gt;,&lt;table&gt;,&lt;th&gt;,&lt;tr&gt; and &lt;td&gt;. These tags provide meaning to the content structure</p>
+                                <li>Keyboard Navigation</li>
+                                <p>This web page is fully navigable using keyboard.All interactive elements, such as links and similar elements are accessible with the "Tab" key and enter key.</p>
+                                <li>Tooltip Description</li>
+                                <p>I have implemented tooltips for each thumbnail image to provide additional information when users hover over the image. Tooltips are helpful for offering extra context about an image</p>
+                            </ol>
+                        <h3>Link to the validation page</h3> 
+                            <p><a href="../html/validation_ST2.html#tableVal">Table page validation</a></p> <br>
+                        <h3>Link to the page</h3>
+                            <p><a href="../html/table.html"  target="_blank">Table page</a></p>
+                </section>
+                <section class="PE-section">
+                    <h2 id="content">Content Page</h2>
+                    <p><img src="../images/pageEditor/ST2/content.png" alt=""></p>
+                        <h3>Technical Description</h3>
+                        <p>This "Things to Do in Education" page give guid to educational activities and oppotunities like volunteerig.this page organized well in user friendly and visually engaging format. I applied grid and flexbox layouts for proper alignment and responsiveness. The page includes smooth navigation links to different sections, and I implemented a mobile-friendly design with a hamburger menu. Additionally, I styled the page with hover effects on the content cards, providing an interactive experience. The layout adjusts seamlessly to different screen sizes.</p><br>
+                        <h3 class="techniques">HTML Techniques I used:</h3>
+                        <ul class="techniques-List">
+                            <li><span>&lt;section class="thingsToDo"&gt; :</span>I used this section to create the heading and the internal navigation bar.</li>
+                            <li><span>&lt;section class="content-container"&gt; :</span>Organize the content catogories for Academic,Extracurricular and community.</li>
+                            <li><span>&lt;div class="activity-container"&gt; :</span>Implements a grid-based layout to showcase different activities for each category. </li>
+                        </ul><br>
+                        <h3 class="techniques">CSS Techniques I used:</h3>
+                        <ul class="techniques-List">
+                            <li><span>Hover effects :</span>Each activity cards transform on hover with elevation and shadow effects.</li>
+                            <li><span>Carrd styles :</span>Style with custom style for cells,headers and rows with alternating row colors.</li>
+                            <li><span>Grid Layout :</span>Used for activity-container with responsive columns(grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)))</li>
+                        </ul><br>
+                        <h3>Accessibility<sup><a href="#ref2" id="cite1">[2]</a></sup></h3>
+                        <ol class="Accessibility">
+                            <div class="Accessibility-Image">
+                                <img src="../images/pageEditor/ST2/waveContent.png" alt="Accessibility-Image">
+                            </div>
+                            <p>(In the above image show three errors that not contating any text in the link but there are icons for social media So we wont text to here but the error is occuring.)</p>
+                            <li>Quick Navigation</li>
+                            <p>The navigation uses a clear hierarchical structure with accessible links to internal pages and content sections. This organization helps users in understanding the flow of the web page and locating key information easily.</p>
+                            <li>Image ALT Text</li>
+                            <p>I implement descriptive alt text to all images that I have been used.This is helps for the screen readers to understahd the content of the image even if image cannot see.</p>
+                            <li>Semantic HTML</li>
+                            <p> I used appropriate HTML tags such as &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,&lt;sections&gt; and &lt;footer&gt;. These tags provide meaning to the content structure</p>
+                            <li>Keyboard Navigation</li>
+                            <p>This web page is fully navigable using keyboard.All interactive elements, such as buttons, links and similar elements are accessible with the "Tab" key and enter key.</p>
+                            <li>Accessible Links</li>
+                            <p>Links throughout the page are clearly defined and have descriptive anchor text.This ensures that users know where the link will take them and what action it will perform.</p>
+                        </ol>
+                        <h3>Link to the validation page</h3> 
+                            <p><a href="../html/validation_ST2.html#contentVal">Content page Validation</a></p> <br>
+                
+                        <h3>Link to the page</h3>
+                            <p><a href="../html/content_ST2.html" target="_blank">Content page</a></p>
+                </section>
+                <section class="PE-section">
+                    <h2 id="challenge"> Challenges and Lessons Learned</h2><br>
+                    <h3>Responsive Design Implementation</h3>
+                    <p>One difficult challenge was creating a consistently responsive designs for the home,Table and content pages particularly the card sections. First, the cards would break layout on smaller screens, overlapping or displaying incorrectly.</p>
+        
+                    <h4>Solution:</h4>
+                    <p>I implemented a combination of flexbox with the flex wrap property and media queries targeting specific breakpoints. This allowed cards to reflow naturally on smaller screens while maintaining their visual integrity. <b>I learned the importance of testing across multiple device sizes throughout development.</b>.</p>
+                    <div class="challanges-img">
+                        <img src="../images/pageEditor/ST2/HomeCode.png" alt="Mobile Responsive code">
+                    </div><br>
+                    <h3>CSS Animation Performance</h3>
+                    <p>When implementing hover effects for the mission and vision sections, I encountered performance issues where animations would stutter on some mobile devices.</p>
+                    
+                    <h4>Solution:</h4>
+                    <p>I optimized the animations by using CSS transform properties instead of animating dimensions directly, as transforms are more accelerated.In here <b>I learned i have to be more mindful when designing interactive elements, especially for mobile devices with limited processing power.</b></p> 
+                    <div class="challanges-img">
+                        <img src="../images/pageEditor/ST2/HomeCSS.png" alt="css animation code">
+                    </div><br>
+                    <h3>Managing Content Load Time</h3>
+                    <p>Large images and content-heavy sections caused the page to load slowly, particularly for users with slower internet connections or mobile data.</p>
+                    
+                    <h4>Solution:</h4>
+                    <p>To optimize content load times, I compressed and resized images in the home page cards without compromising on quality, using tools like ImageOptim or TinyPNG. <b>I learned here that the large images take more time to load the pages.</b></p> 
+                    <div class="challanges-img">
+                        <img src="../images/pageEditor/ST2/cardIMG.png" alt="Compressed images code">
+                    </div>
+                </section>
+                <section class="PE-section">
+                    <h2 id="compliance"> Compliance</h2>
+                    <p>All pages I developed comply with Janet regulations<sup><a href="#ref1" id="cite1">[1]</a></sup> governing web page publication in the following ways:</p><br>
+                    <ul>
+                        <li><strong>Copyright Compliance: </strong>Only used royalty free images with proper attribution where required and gave references for the other content i used.</li>
+                        <li><strong>Security Compliance: </strong>All pages are expected to be served over HTTPS to ensure data transmitted between the user's browser and the server is encrypted. This helps in preventing data interception and ensuring privacy.</li>
+                        <li><strong>Privacy Protection: </strong>No collection of personal information without permission.</li>
+                        <li><strong>Accessibility Standards: </strong>Followed WCAG 2.1 guidelines to ensure content is accessible to all users.</li>
+                        <li><strong>Content Appropriateness: </strong>All content I used are direclty related to the sustainable development goals.</li>
+                    </ul><br>
+                    <p>&check; I have make sure that all external resources are properly referenced, and that all content adheres to acceptable use policies for educational institutions. Regular validation through W3C validators confirms technical compliance with web standards.</p><br>
+                    <p>&check; Accessibility compliance has been validate through WAVE extention ensuring that tha pages are adhere to WCAG 2.1 AA standards for inclusive use. </p>
+                
+                </section> 
+                <section class="PE-section">
+                    <h2 id="ref">References</h2>
+                    
+                    <ul>
+                        <li id="ref1">[1] Janet.(Accessed March 9, 2025). <i>Regulations governing web page publication</i>. Retrieved from <a href="https://community.jisc.ac.uk/library/janet-services-documentation/acceptable-use-policy" target="_blank">https://community.jisc.ac.uk/library/janet-services-documentation/acceptable-use-policy</a></li>
+                        <li id="ref2">[2] W3C. (Accessed March 9, 2025). <i>Web Content Accessibility Guidelines (WCAG) 2.1</i>. Retrieved from <a href="https://www.w3.org/TR/WCAG21/" target="_blank">https://www.w3.org/TR/WCAG21/</a></li>
+                        <li id="ref3">[3] UN Sustainable Development Goals. (Accessed March 9, 2025). <i>Goal 4: Quality Education</i>. Retrieved from <a href="https://www.un.org/sustainabledevelopment/education/" target="_blank">https://www.un.org/sustainabledevelopment/education/</a></li>
+                        <li id="ref4">[4] Volunteer World. (Accessed March 9, 2025). <i>Goal 4: Quality Education</i>. Retrieved from <a href="https://www.volunteerworld.com/en/volunteer-abroad/goal-4-quality-education" target="_blank">https://www.volunteerworld.com/en/volunteer-abroad/goal-4-quality-education</a></li>
+                        <li id="ref5">[5] UN Volunteers. (Accessed March 9, 2025). <i>SDG 4: Quality Education</i>. Retrieved from <a href="https://www.unv.org/sustainable-development-goal/sdg-4-quality-education" target="_blank">https://www.unv.org/sustainable-development-goal/sdg-4-quality-education</a></li>
+                        <li id="ref6">[6] Freepik. (Accessed February 15, 2025). <i>Target Image - Freepik</i>. Retrieved from <a href="https://www.freepik.com/vectors" target="_blank">https://www.freepik.com/free-photos-vectors</a></li>
+                        <li id="ref7">[7] UN SDGs.(Accessed February 15, 2025). <i>Sustainable Development Goals (SDGs)</i>. Retrieved from <a href="https://sdgs.un.org/goals" target="_blank">https://sdgs.un.org/goals</a></li>
+                        <li id="ref8">[8] YouTube. (Accessed February 10, 2025). <i>Video on HTML Basics</i>. Retrieved from <a href="https://www.youtube.com/watch?v=_GTMOmRrqkU" target="_blank">https://www.youtube.com/watch?v=_GTMOmRrqkU</a></li>
+                        <li id="ref9">[9] W3Schools. (Accessed February 11, 2025). <i>HTML Tutorial</i>. Retrieved from <a href="https://www.w3schools.com/html/" target="_blank">https://www.w3schools.com/html/</a></li>
+                    </ul>
+                    
+                </section>
+        </div>
+        <p class="top"><a href="#top">Go top</a></p>
+    </main>        
+
+    <!--Footer the the page-->
+    <footer class="footer" id="footer">
+        <div class="global-footer">
+            <div class="footer-section"><!--Use div element for the sections for each prt-->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/home.html" >Home</a></li>
+                    <li><a href="../html/volunteer.html">Volunteer</a></li>
+                    <li><a href="../html/table.html">Table</a></li>
+                    <li><a href="../html/feedback.html" >Feedback</a></li>
+                    <li><a href="../html/sitemap.html">Sitemap</a></li>
+                    <li><a href="../html/team.html">About Us</a></li>
+                    <li><a href="../html/profile.html">User Profile</a></li>        
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Team</h3>
+                <ul>
+                    <!--Link each team member editor page-->
+                    <li><a href="../html/pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="../html/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="../html/pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="../html/pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Page Editor</h3>
+                <ul>
+                    <li><a href="../html/pageEditor_ST2.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/1223706751502130" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdg.goal4/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12785096/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@gmail.com</li>
+                    <li>Phone: 0705362187</li>
+                    <li>Addres: Colombo 7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quality Education. All rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script><!--Linking the cdn file for social media icons-->
+    <script src="../js/script.js"></script><!--Linking the javascript file-->
+
+</body>
+</html>

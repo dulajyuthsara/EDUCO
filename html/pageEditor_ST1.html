@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information for encoding and responsivnss-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vihanga</title>
+    <link rel="stylesheet" href="../Styles/style.css"><!--Linking the style sheet-->
+    <link rel="stylesheet" href="../Styles/pagee.css">
+    <link rel="stylesheet" href="../Styles/pageEditor_validator_ST1.css">
+</head>
+<!--Body of the web page-->
+<body>
+    <!--Header section of the page-->
+    <header>
+        <div class="logo"><!--Dev element for the logo that link to home page-->
+            <a href="../html/home.html"><img src="../images/home/Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <!--Link to each web page-->
+            <ul id="navigations">
+                <li><a href="../html/home.html" class="active">Home</a></li>
+                <li><a href="../html/volunteer.html" >Volunteer</a></li>
+                <li><a href="../html/table.html" >Table</a></li>
+                <li><a href="../html/feedback.html" >Feedback</a></li>
+                <li><a href="../html/sitemap.html" >Sitemap</a></li>
+                <li><a href="../html/team.html" >About Us</a></li> 
+                <li>
+                     <!--Profile Button-->
+                    <div class="mobile-login">
+                        <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                            <span>Profile</span>
+                            <span class="user-icon">
+                            <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                            </span>
+                        </button>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <!--Hamburger menu-->
+        <div class="hamburger-menu">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+        </div> 
+
+        <!--Profile Button-->
+        <div class="profile-btn-container">
+            <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                <span>Profile</span>
+                <span class="user-icon">
+                    <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                </span>
+            </button>
+        </div>
+    </header>
+    <section class="stud">
+        <h2>Your Name, W.V.V.A. Botheju</h2>
+        <h2>UOW/IIT ID: W2120519 / 20232519</h2>
+    </section>
+
+    <main class="PE-main" id="top">
+        <div class="editor_container">
+            <aside class="aside-div">
+                <section class="aside-section">
+                    <h3> Pages developed:</h3>
+                    <ul class="top-level-ul">
+                        <li class="Student">Student 1
+                            <ul> 
+                                <li><a href="../html/pageEditor_ST1.html#splash">Splash page</a></li>
+                                <li><a href="../html/pageEditor_ST1.html#volunteer">Volunteer Page</a></li>
+                                <li><a href="../html/pageEditor_ST1.html#content">Content page</a></li>
+                            </ul>
+                        </li>
+                        <li class="Student">Student 2
+                            <ul>
+                                <li><a href="../html/pageEditor_ST2.html#home">Home page</a></li>
+                                <li><a href="../html/pageEditor_ST2.html#table">Table page</a></li>
+                                <li><a href="../html/pageEditor_ST2.html#content">Content page</a></li>
+                            </ul>
+                        </li>
+                        <li class="Student">Student 3
+                            <ul>
+                                <li><a href="../html/pageEditor_ST3.html#feedback">Feedback page</a></li>
+                                <li><a href="../html/pageEditor_ST3.html#team">Team page</a></li>
+                                <li><a href="../html/pageEditor_ST3.html#content">Content page</a></li>
+                            </ul>
+                        </li>
+                        <li class="Student">Student 4
+                            <ul>
+                                <li><a href="../html/pageEditor_ST4.html#profile">Profile page</a></li>
+                                <li><a href="../html/pageEditor_ST4.html#sitemap">Sitemap page</a></li>
+                                <li><a href="../html/pageEditor_ST4.html#content">Content page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <div class="main-content">
+                <!-- Splash Page Section -->
+                <section class="PE-section">
+                    <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        The Splash page was implemented using HTML5 and CSS3. Key HTML tags used include the <code>&lt;header&gt;</code> for the navigation bar, <code>&lt;section&gt;</code> for organizing content, and <code>&lt;img&gt;</code> for displaying the logo and background image. CSS techniques included Flexbox for responsive layout, CSS animations for the countdown timer, and media queries for mobile responsiveness.
+                    </p>
+                    <h3>Accessibility Evaluation</h3>
+                    <img src="../images/pageEditor/ST1/splash_accessibility.png" alt="Splash Page Accessibility Evaluation">
+                    <h3>Link to the validation page</h3>
+                    <p><a href="../html/validation_ST1.html#splashval">Validation for Splash Page</a></p>
+                    <h3>Link to the page</h3>
+                    <p><a href="../html/splash.html">Splash Page</a></p>
+                </section>
+
+                <!-- Volunteer Page Section -->
+                <section class="PE-section">
+                    <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        The Volunteer page was built using HTML forms and CSS for styling. Key features include the <code>&lt;form&gt;</code> for user input fields, <code>&lt;input&gt;</code> and <code>&lt;select&gt;</code> for form controls, and CSS Grid for layout organization.
+                    </p>
+                    <h3>Accessibility Evaluation</h3>
+                    <img src="../images/pageEditor/ST1/volunteer_accessibility.png" alt="Volunteer Page Accessibility Evaluation">
+                    <h3>Link to the validation page</h3>
+                    <p><a href="../html/validation_ST1.html#volunteerVal">Validation for Volunteer Page</a></p>
+                    <h3>Link to the page</h3>
+                    <p><a href="../html/volunteer.html">Volunteer Page</a></p>
+                </section>
+
+                <!-- Content Page Section -->
+                <section class="PE-section">
+                    <h2 id="content_ST1_PG">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        The Content page was designed to display detailed information. Key features include the <code>&lt;section&gt;</code> for organizing content, <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> for lists, and CSS Flexbox for responsive layout.
+                    </p>
+                    <h3>Accessibility Evaluation</h3>
+                    <img src="../images/pageEditor/ST1/content_accessibility.png" alt="Content Page Accessibility Evaluation">
+                    <h3>Link to the validation page</h3>
+                    <p><a href="../html/validation_ST1.html#contentVal">Validation for Content Page</a></p>
+                    <h3>Link to the page</h3>
+                    <p><a href="../html/content_ST1.html">Content Page</a></p>
+                </section>
+
+                <!-- Challenges and Lessons Learned Section -->
+                <section class="PE-section">
+                    <h2 id="challenge">Challenges and Lessons Learned</h2>
+                    <p>
+                        One of the main challenges was ensuring cross-browser compatibility. This was resolved by testing the pages on multiple browsers and using CSS prefixes where necessary. Another challenge was implementing responsive design, which was addressed using media queries and flexible layouts. Through this project, I learned the importance of planning and testing early in the development process.
+                    </p>
+                </section>
+
+                <!-- Compliance Section -->
+                <section class="PE-section">
+                    <h2 id="compliance">Compliance</h2>
+                    <p>
+                        The pages comply with Janet regulations by ensuring all content is accessible, using secure protocols for external links, and providing clear navigation and user feedback.
+                    </p>
+                </section>
+
+                <!-- References Section -->
+                <section class="PE-section">
+                    <h2 id="ref">References</h2>
+                    <p>
+                        <ul class="ref">
+                            <li>Freepik. (n.d.). <i>Abstract low polygonal graduation cap planet earth globe model map e-learning concept.</i> Retrieved from <a href="https://www.freepik.com/free-vector/abstract-low-polygonal-graduation-cap-planet-earth-globe-model-map-e-learning-concept_9175966.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Woman reading stories to children.</i> Retrieved from <a href="https://www.freepik.com/free-photo/woman-reading-stories-children_2231522.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Medium shot of a graduate student.</i> Retrieved from <a href="https://www.freepik.com/free-photo/medium-shot-graduate-student_13819175.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Development improvement opportunity strategy growth concept.</i> Retrieved from <a href="https://www.freepik.com/free-photo/development-improvement-opportunity-strategy-growth-concept_2830648.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Sexual education abstract concept vector illustration.</i> Retrieved from <a href="https://www.freepik.com/free-vector/sexual-education-abstract-concept-vector-illustration-sexual-health-teaching-sex-education-lesson-school-human-sexuality-emotional-relations-responsibilities-abstract-metaphor_11664185.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Pile of books near an earth globe.</i> Retrieved from <a href="https://www.freepik.com/free-photo/pile-books-near-earth-globe_5301977.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Sustainable development goals still life.</i> Retrieved from <a href="https://www.freepik.com/free-photo/sustainable-development-goals-still-life_38687417.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Students studying indoors full shot.</i> Retrieved from <a href="https://www.freepik.com/free-photo/students-studying-indoors-full-shot_31194723.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Beautiful redhead female graduate smiling holding books and diploma.</i> Retrieved from <a href="https://www.freepik.com/free-photo/beautiful-redhead-female-graduate-smiling-holding-books-diploma_9028631.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Smiling showing thumbs up young female teacher sitting at desk with school tools in classroom.</i> Retrieved from <a href="https://www.freepik.com/free-photo/smiling-showing-thumbs-up-young-female-teacher-sitting-desk-with-school-tools-classroom_28147998.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Diverse people in refugee camps.</i> Retrieved from <a href="https://www.freepik.com/free-ai-image/diverse-people-refugee-camps_207422219.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Knowing the answer.</i> Retrieved from <a href="https://www.freepik.com/free-photo/knowing-answer_5403446.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Clever woman holding book in hands.</i> Retrieved from <a href="https://www.freepik.com/free-photo/clever-woman-holding-book-hands_2675570.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Happy kids in elementary school.</i> Retrieved from <a href="https://www.freepik.com/free-photo/happy-kids-elementary-school_18416141.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Medium shot of a community working together.</i> Retrieved from <a href="https://www.freepik.com/free-photo/medium-shot-community-working-together_13658962.htm">https://www.freepik.com</a></li>
+                            <li>Freepik. (n.d.). <i>Mother and daughter playing doctor with a stethoscope.</i> Retrieved from <a href="https://www.freepik.com/free-photo/mother-daughter-playing-doctor-with-stethoscope_5519327.htm">https://www.freepik.com</a></li>
+                            <li>United Nations. (n.d.). <i>Sustainable Development Goal 4: Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</i> Retrieved from <a href="https://sdgs.un.org/goals/goal4#targets_and_indicators">https://sdgs.un.org/goals/goal4#targets_and_indicators</a></li>
+                        </ul>
+                    </p>
+                </section>
+
+            </div>
+        </div>
+        <p class="top"><a href="#top">Go top</a></p>
+    </main>
+    <!--Footer the the page-->
+    <footer class="footer" id="footer">
+        <div class="global-footer">
+            <div class="footer-section"><!--Use div element for the sections for each prt-->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/home.html" >Home</a></li>
+                    <li><a href="../html/volunteer.html">Volunteer</a></li>
+                    <li><a href="../html/table.html">Table</a></li>
+                    <li><a href="../html/feedback.html" >Feedback</a></li>
+                    <li><a href="../html/sitemap.html">Sitemap</a></li>
+                    <li><a href="../html/team.html">About Us</a></li>
+                    <li><a href="../html/profile.html">User Profile</a></li>        
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Team</h3>
+                <ul>
+                    <!--Link each team member editor page-->
+                    <li><a href="../html/pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="../html/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="../html/pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="../html/pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Page Editor</h3>
+                <ul>
+                    <li><a href="../html/pageEditor_ST1.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/1223706751502130" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdg.goal4/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12785096/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@gmail.com</li>
+                    <li>Phone: 0705362187</li>
+                    <li>Addres: Colombo 7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quality Education. All rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script><!--Linking the cdn file for social media icons-->
+    <script src="../js/script.js"></script><!--Linking the javascript file-->
+
+</body>
+</html>

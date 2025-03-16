@@ -1,0 +1,447 @@
+:root{
+    --primary-color: #A40033;
+    --secondary-color: #c5192D;
+    --text-color: #ecf0f1;
+    --background-color: rgba(0, 0, 0, 0.9);
+    --color_01: #D50032;
+    --color_02: #f63c3ce0;
+    --button-color01: #cb3530;
+}
+/* Main Profile Container */
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 80px; /* Adjust this value based on your navigation bar height */
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* User Profile Header */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f8f9fa;
+    margin-bottom: 15px;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    color: #801336;
+    margin: 0 0 5px 0;
+}
+
+.profile-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-badge span {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.stars {
+    color: gold;
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.profile-bio {
+    text-align: center;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Profile Details */
+.profile-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #666;
+}
+
+.detail-value a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.detail-value a:hover {
+    text-decoration: underline;
+}
+
+/* Section Headers */
+.profile-card h2 {
+    color: #801336;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+/* Skills Section Container*/
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-item {
+    width: 100%;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-percentage {
+    font-size: 14px;
+    color: #666;
+}
+
+.skill-bar {
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+    background-color: #d9534f;
+    width: 0%; /* default width */
+}
+
+/* Define width for specific progress classes */
+.progress-60 {
+    width: 60%;
+}
+
+.progress-75 {
+    width: 75%;
+}
+
+.progress-68 {
+    width: 68%;
+}
+
+/* Goals and Experiences Lists */
+.goals-list, .frustrations-list, .experience-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.goals-list li, .frustrations-list li, .experience-list li {
+    position: relative;
+    padding: 8px 0 8px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.goals-list li:before, .frustrations-list li:before, .experience-list li:before {
+    content: "•";
+    color: #801336;
+    font-size: 18px;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+
+/* UN Goals Grid */
+.un-goals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.un-goal-item {
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.un-goal-item:hover {
+    transform: scale(1.05);
+}
+
+.un-goal-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Interests Section Container */
+.interests-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.interest-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.interest-item:hover {
+    background-color: #eef1f5;
+}
+
+.interest-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    background-color: #f1f1f1;
+}
+
+.decorative-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.interest-details h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.interest-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Upcoming Volunteer Missions (Calendar) */
+.calendar-container {
+    width: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-nav {
+    background-color: var(--secondary-color);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.calendar-nav:hover {
+    background-color: var(--primary-color);
+}
+
+.calendar-events {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.calendar-event {
+    display: flex;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.event-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #801336;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    width: 60px;
+}
+
+.event-day {
+    font-size: 24px;
+}
+
+.event-details {
+    padding: 15px;
+    flex: 1;
+}
+
+.event-details h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.event-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Contact Me Form Styles */
+.contact-form-container {
+    margin-top: 20px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .form-row {
+        flex-direction: row;
+    }
+    
+    .form-group {
+        flex: 1;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #801336;
+    box-shadow: 0 0 0 2px rgba(128, 19, 54, 0.2);
+}
+
+.form-submit {
+    text-align: right;
+}
+
+.submit-btn {
+    background-color: #801336;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #6a0f2b;
+}
+
+/* Responsive Grid Layout for Profile Page */
+@media (min-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr 1fr; /* Two-column layout for tablets */
+    }
+}
+
+@media (min-width: 992px) {
+    .profile-container {
+        grid-template-columns: 1fr 1fr 1fr; /* Three-column layout for larger screens */
+    }
+}
+
+.profile-full-width {
+    grid-column: 1 / -1; /* Ensures full-width for specific elements */
+}
+
+/* Hover Effect for Experiences, Goals, Frustrations */
+.experience-list li, 
+.goals-list li, 
+.frustrations-list li {
+    transition: padding-left 0.3s ease;
+}
+
+.experience-list li:hover, 
+.goals-list li:hover, 
+.frustrations-list li:hover {
+    padding-left: 30px;
+}
+
+
+

@@ -1,0 +1,125 @@
+/* Internal Navigation Menu */
+.internal-nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.internal-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.internal-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.internal-nav ul li a {
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+.internal-nav ul li a:hover {
+    color: #c5192d;
+}
+
+/* Content Boxes */
+.content-box {
+    background: rgba(255, 255, 255, 0.8); /* Translucent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* Add space on the sides */
+    max-width: 800px; /* Limit width for smaller boxes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.content-box:hover {
+    transform: scale(1.02); /* Slightly scale up the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+.content-box h2 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.content-box h3 {
+    color: #1e3c72;
+    margin-top: 15px;
+    position: relative; /* Required for pseudo-element positioning */
+    display: inline-block; /* Ensure the underline only spans the text */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.content-box h3::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline below the text */
+    width: 0; /* Start with no width */
+    height: 2px; /* Thickness of the underline */
+    background-color: #c5192d; /* Red color for the underline */
+    transition: width 0.3s; /* Smooth width transition */
+}
+
+.content-box h3:hover {
+    color: #c5192d; /* Change text color to red on hover */
+}
+
+.content-box h3:hover::before {
+    width: 100%; /* Expand the underline to full width */
+}
+
+.content-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content-box ul li {
+    margin-bottom: 10px;
+}
+
+/* Go to Top Links */
+.go-to-top {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #c5192d;
+    text-decoration: none;
+}
+
+.go-to-top:hover {
+    text-decoration: underline;
+}
+
+/* Go to Top Button */
+#go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #c5192d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#go-to-top:hover {
+    background-color: #e84a5f;
+    transform: scale(1.05);
+}
+
+/* Content Images */
+.content-image {
+    width: 50%; /* Adjust this value to make the image smaller */
+    border-radius: 10px; /* Match the box's border radius */
+    margin-bottom: 15px; /* Add space below the image */
+    display: block; /* Ensure the image is centered */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+}

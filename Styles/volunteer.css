@@ -1,0 +1,231 @@
+/* Available Programs Section */
+.volunteer-programs {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+.volunteer-programs h1 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+.filter-dropdown {
+    margin: 20px 0;
+    text-align: center; /* Center the dropdown */
+}
+
+.filter-dropdown label {
+    font-size: 1.2rem;
+    color: #1e3c72;
+    margin-right: 10px;
+}
+
+.filter-dropdown select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #1e3c72;
+    border-radius: 5px;
+    background-color: white;
+    color: #1e3c72;
+}
+
+/* Scrollable Volunteer Cards with 3 Cards per Row */
+.program-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    gap: 20px; /* Space between cards */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 600px; /* Set a fixed height for the container */
+    padding: 20px 0; /* Add padding for better spacing */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.program-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 14px); /* 3 cards per row with gap */
+    padding: 20px;
+    text-align: center;
+    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+}
+
+.program-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.program-card h2 {
+    font-size: 1.5rem;
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.program-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.program-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.program-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.program-buttons .signup-btn {
+    background-color: #c5192d; /* Primary color */
+    color: white;
+}
+
+.program-buttons .learn-more {
+    background-color: #e84a5f; /* Shade of primary color */
+    color: white;
+}
+
+.program-buttons button:hover {
+    transform: scale(1.05);
+}
+
+/* User Ratings and Reviews Section */
+.user-reviews {
+    padding: 20px;
+    text-align: center;
+}
+
+.rating-summary {
+    margin-bottom: 20px;
+}
+
+.rating-summary h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.rating-summary span {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.rating-summary p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.review-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    justify-content: center; /* Center the review cards */
+}
+
+.review-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    flex: 0 0 auto;
+}
+
+.review-card h3 {
+    margin: 0 0 10px;
+    color: #1e3c72;
+}
+
+.review-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.review-card a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.review-card a:hover {
+    text-decoration: underline;
+}
+
+.review-card .reviewer {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Review Adder Section */
+.review-adder {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.review-adder h2 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#review-text {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #1e3c72;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.submit-btn, .cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn {
+    background-color: #c5192d; /* Primary color */
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #e84a5f; /* Shade of primary color */
+    color: white;
+}
+
+.submit-btn:hover, .cancel-btn:hover {
+    transform: scale(1.05);
+}

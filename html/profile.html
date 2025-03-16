@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information for encoding and responsivnss-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../Styles/style.css"><!--Linking the style sheet-->
+    <link rel="stylesheet" href="../Styles/profile.css">
+    
+</head>
+<!--Body of the web page-->
+<body>
+    <!--Header section of the page-->
+    <header>
+        <div class="logo"><!--Dev element for the logo that link to home page-->
+            <a href="../html/home.html"><img src="../images/home/Logo.png" alt="Logo"></a>
+        </div>
+        <!--navigation bar-->
+        <nav>
+            <!--Link to each web page-->
+            <ul id="navigations">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/volunteer.html" >Volunteer</a></li>
+                <li><a href="../html/table.html" >Table</a></li>
+                <li><a href="../html/feedback.html" >Feedback</a></li>
+                <li><a href="../html/sitemap.html" >Sitemap</a></li>
+                <li><a href="../html/team.html" >About Us</a></li> 
+                <li>
+                     <!--Profile Button-->
+                    <div class="mobile-login">
+                        <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                            <span>Profile</span>
+                            <span class="user-icon">
+                            <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                            </span>
+                        </button>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <!--Hamburger menu-->
+        <div class="hamburger-menu">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+        </div> 
+
+        <!--Profile Button-->
+        <div class="profile-btn-container">
+            <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                <span>Profile</span>
+                <span class="user-icon">
+                    <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                </span>
+            </button>
+        </div>
+    </header>
+    <!-- Main Content Container -->
+    <main class="profile-container">
+        <!-- Left Column -->
+        <div class="profile-left-column">
+            <!-- Profile Information Card-->
+            <section class="profile-card">
+                <div class="profile-header">
+                    <img src="../images/userprofile/profile-image.jpg" alt="Tharun Devaraja profile picture" class="profile-avatar">
+                    <h1>Dave Black</h1>
+                    <div class="profile-badge">
+                        <span>Top Volunteer</span>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="profile-bio">
+                    A UI/UX Engineer passionate about using design for social impact, volunteering in education, sustainability, 
+                    and community development to create accessible and user-friendly solutions.
+                </p>
+                <div class="profile-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Age</span>
+                        <span class="detail-value">25</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Nationality</span>
+                        <span class="detail-value">Sri Lankan</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Gender</span>
+                        <span class="detail-value">Male</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">E-mail</span>
+                        <span class="detail-value">
+                            <a href="mailto:tharunrandiv@gmail.com">doejohn@gmail.com</a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Skills Section -->
+            <section class="profile-card">
+                <h2>Professional Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Problem Solving</span>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress progress-60"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Project Management</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress progress-75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Educational Content Design</span>
+                            <span class="skill-percentage">68%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress progress-68"></div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="profile-middle-column">
+            <!-- Goals Section -->
+            <section class="profile-card">
+                <h2>Goals</h2>
+                <ul class="goals-list">
+                    <li>Frustration 1:Expand Professional Network</li>
+                    <li>Develop Leadership Skills</li>
+                    <li>Contribute to Sustainable Development</li>
+                </ul>
+            </section>
+
+            <!-- Frustrations Section -->
+            <section class="profile-card">
+                <h2>Frustrations</h2>
+                <ul class="frustrations-list">
+                    <li>Lack of accessibility awareness</li>
+                    <li>Limited resources for impact projects</li>
+                    <li>Design-development gap</li>
+                </ul>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="profile-card">
+                <h2>Experience</h2>
+                <ul class="experience-list">
+                    <li>UI/UX Design for Social Impact</li>
+                    <li>Volunteering & Leadership</li>
+                    <li>Community Engagement</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Right Column -->
+        <div class="profile-right-column">
+            <!-- UN Goals Section -->
+            <section class="profile-card">
+                <h2>UN Goals I Support</h2>
+                <div class="un-goals-grid">
+                    <div class="un-goal-item" title="Industry, Innovation and Infrastructure">
+                        <a href="https://sdgs.un.org/goals/goal9" target="_blank" rel="noopener">
+                            <img src="../images/userprofile/SDG-icons/SDG9.png" 
+                                 alt="UN Goal 9: Industry, Innovation, and Infrastructure" 
+                                 class="un-goal-icon">
+                        </a>
+                    </div>
+                    <div class="un-goal-item" title="Decent Work and Economic Growth">
+                        <a href="https://sdgs.un.org/goals/goal8" target="_blank" rel="noopener">
+                            <img src="../images/userprofile/SDG-icons/SDG8.png" 
+                                alt="UN Goal 8: Decent Work and Economic Growth" 
+                                class="un-goal-icon">
+                        </a>
+                    </div>
+                    <div class="un-goal-item" title="Climate Action">
+                        <a href="https://sdgs.un.org/goals/goal13" target="_blank" rel="noopener">
+                            <img src="../images/userprofile/SDG-icons/SDG13.jpeg" 
+                                alt="UN Goal 13: Climate Action" 
+                                class="un-goal-icon">
+                        </a>
+                    </div>
+                    <div class="un-goal-item" title="No Poverty">
+                        <a href="https://sdgs.un.org/goals/goal1" target="_blank" rel="noopener">
+                            <img src="../images/userprofile/SDG-icons/SDG1.png" 
+                                alt="UN Goal 1: No Poverty" 
+                                class="un-goal-icon">
+                        </a>
+                    </div>
+                    <div class="un-goal-item" title="Quality Education">
+                        <a href="https://sdgs.un.org/goals/goal4" target="_blank" rel="noopener">
+                            <img src="../images/userprofile/SDG-icons/SDG4.png" 
+                                alt="UN Goal 4: Quality Education" 
+                                class="un-goal-icon">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interests Section -->
+            <section class="profile-card">
+                <h2>Interests</h2>
+                <div class="interests-container">
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <img src="../images/userprofile/Interests-icons/Teach.png" alt="" aria-hidden="true" class="decorative-icon">
+                        </div>
+                        <div class="interest-details">
+                            <h3>Teach</h3>
+                            <p>Sharing knowledge and skills to empower others through education.</p>
+                        </div>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <img src="../images/userprofile/Interests-icons/books.png" alt="" aria-hidden="true" class="decorative-icon">
+                        </div>
+                        <div class="interest-details">
+                            <h3>Read</h3>
+                            <p>Exploring books and articles to gain new insights and perspectives.</p>
+                        </div>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <img src="../images/userprofile/Interests-icons/Plant.png" alt="" aria-hidden="true" class="decorative-icon">
+                        </div>
+                        <div class="interest-details">
+                            <h3>Plant</h3>
+                            <p>Contributing to a greener environment by growing and nurturing plants.</p>
+                        </div>
+                    </div>
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <img src="../images/userprofile/Interests-icons/Write.png" alt="" aria-hidden="true" class="decorative-icon">
+                        </div>
+                        <div class="interest-details">
+                            <h3>Write</h3>
+                            <p>Expressing ideas and knowledge through articles, blogs, and storytelling.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Volunteer Missions Section -->
+        <div class="profile-full-width">
+            <!-- Volunteer Missions Calendar -->
+            <section class="profile-card">
+                <h2>Upcoming Volunteer Missions</h2>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prevMonth" class="calendar-nav">&lt;</button>
+                        <h3 id="currentMonth">February 2025</h3>
+                        <button id="nextMonth" class="calendar-nav">&gt;</button>
+                    </div>
+                    <div class="calendar-events">
+                        <div class="calendar-event">
+                            <div class="event-date">
+                                <span class="event-day">22</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Tutoring & Mentorship</h4>
+                                <p>Provided mentorship and tutoring to underprivileged students to enhance learning opportunities.</p>
+                            </div>
+                        </div>
+                        <div class="calendar-event">
+                            <div class="event-date">
+                                <span class="event-day">28</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Educational Workshops</h4>
+                                <p>Conducted sessions on digital literacy, coding, and design to empower students with tech skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Me Section -->
+            <section class="profile-card contact-form-container">
+                <h2>Contact me</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name*</label>
+                            <input type="text" id="fullName" name="fullName" maxlength="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" maxlength="15" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userAge">Age</label>
+                            <input type="number" id="userAge" name="userAge" min="1" max="120">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" maxlength="500"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">Send</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!--Footer the the page-->
+    <footer class="footer" id="footer">
+        <div class="global-footer">
+            <div class="footer-section"><!--Use div element for the sections for each prt-->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/home.html" >Home</a></li>
+                    <li><a href="../html/volunteer.html">Volunteer</a></li>
+                    <li><a href="../html/table.html">Table</a></li>
+                    <li><a href="../html/feedback.html" >Feedback</a></li>
+                    <li><a href="../html/sitemap.html">Sitemap</a></li>
+                    <li><a href="../html/team.html">About Us</a></li>
+                    <li><a href="../html/profile.html">User Profile</a></li>        
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Team</h3>
+                <ul>
+                    <!--Link each team member editor page-->
+                    <li><a href="../html/pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="../html/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="../html/pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="../html/pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Page Editor</h3>
+                <ul>
+                    <li><a href="../html/pageEditor_ST4.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/1223706751502130" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdg.goal4/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12785096/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@gmail.com</li>
+                    <li>Phone: 0705362187</li>
+                    <li>Addres: Colombo 7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quality Education. All rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script><!--Linking the cdn file for social media icons-->
+    <script src="../js/script.js"></script><!--Linking the javascript file-->
+    <script src="../js/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Main content container */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px 20px 20px;
+
+}
+
+/* Main heading */
+h1 {
+  color: #b60303;
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #721c24;
+  padding-bottom: 10px;
+}
+
+/* Internal Navigation Menu */
+.internal-nav {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+/* Navigation menu items */
+.internal-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.internal-nav ul li a {
+  text-decoration: none;
+  color: #721c24;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for navigation */
+.internal-nav ul li a:hover {
+  background-color: #721c24;
+  color: #fff;
+}
+
+/* News Container */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Individual News Items */
+.news-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.date-container {
+  padding: 10px 20px;
+}
+
+.date {
+  color: #e84a5f;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.news-content {
+  display: flex;
+  border-top: 1px solid #eee;
+}
+
+.news-image-container {
+  flex: 0 0 250px;
+  padding: 15px;
+}
+
+.news-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.news-text {
+  flex: 1;
+  padding: 15px;
+  position: relative;
+}
+
+.news-text h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.location-date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.description {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* SDG Badge Styles */
+.sdg-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SDG Badge text */
+.sdg-badge span {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* SDG Badge colours */
+.sdg-badge.sdg-6 {
+  background-color: #0f9ec2; /* Color for SDG 6 (Water) */
+}
+
+/* SDG Badge 13 (Climate Action) */
+.sdg-badge.sdg-13 {
+  background-color: #3F7E44; /* Color for SDG 13 (Climate Action) */
+}
+
+
+/* Go to Top Button */
+.go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #721c24;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+/* Hover effect for Go to Top Button */
+.go-to-top:hover {
+  background-color: #9a2530;
+  transform: translateY(-3px);
+}
+
+/* See More Button */
+.see-more-container {
+  text-align: right;
+  margin-right: 20px; /* Reduce margin */
+}
+
+.see-more-button {
+  margin-right: 20px;
+  display: inline-block;
+  background-color: #b60300; /* SDG red color */
+  color: white;
+  font-weight: bold;
+  padding: 4px 10px; 
+  border-radius: 5px;  
+  text-decoration: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); 
+  transition: all 0.2s ease;
+  font-size: 0.8rem;  
+  letter-spacing: 0.3px;  
+}
+
+/* Hover effect for See more button */
+.see-more-button:hover {
+  background-color: #84100e;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Active (click) effect */
+.see-more-button:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .see-more-button {
+      padding: 5px 12px; /* Slightly bigger for mobile */
+      font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .news-content {
+      flex-direction: column;
+  }
+  
+  .news-image-container {
+      flex: 0 0 auto;
+  }
+  
+  .internal-nav ul {
+      justify-content: center;
+  }
+  
+  .sdg-badge {
+      top: 10px;
+      right: 10px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  #go-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#go-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 992px) {
+  .mobile-menu-toggle {
+      display: block;
+  }
+
+  .main-nav {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+  }
+
+  .main-nav.mobile-active {
+      max-height: 300px;
+  }
+}
+}

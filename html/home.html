@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information for encoding and responsivnss-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../Styles/style.css"><!--Linking the global style sheet-->
+    <link rel="stylesheet" href="../Styles/home.css"><!--Linking the home style sheet-->
+</head>
+<!--Body of the web page-->
+<body>
+    <!--Header section of the page-->
+    <header>
+        <div class="logo"><!--Dev element for the logo that link to home page-->
+            <a href="../html/home.html"><img src="../images/home/Logo.png" alt="Logo of the website"></a>
+        </div>
+        <!--navigation bar-->
+        <nav>
+            <!--Link to each web page-->
+            <ul id="navigations">
+                <li><a href="../html/home.html" class="active">Home</a></li>
+                <li><a href="../html/volunteer.html" >Volunteer</a></li>
+                <li><a href="../html/table.html" >Table</a></li>
+                <li><a href="../html/feedback.html" >Feedback</a></li>
+                <li><a href="../html/sitemap.html" >Sitemap</a></li>
+                <li><a href="../html/team.html" >About Us</a></li> 
+                <li>
+                     <!--Profile Button-->
+                    <div class="mobile-login">
+                        <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                            <span>Profile</span>
+                            <span class="user-icon">
+                            <img src="../images/template/60111.jpg" alt="Avatar" class="user-image">
+                            </span>
+                        </button>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+        <!--Hamburger menu-->
+        <div class="hamburger-menu">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+        </div> 
+        <!--Profile Button-->
+        <div class="profile-btn-container">
+            <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                <span>Profile</span>
+                <span class="user-icon">
+                    <img src="../images/template/60111.jpg" alt="Avatar" class="user-image">
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <!--Main content of the page-->
+    <main>
+        <section class="intro">
+            <div class="intro-msg">
+                <h1>Building a Better Tommorow with Quality Education</h1>
+                <p>Quality education opens opportunities, fosters lifelong learning, and supports sustainable development. By ensuring equal access, we empower future leaders to address global challenges.</p>
+                <button class="explore-button" onclick="window.location.href='../html/table.html'" aria-label="Explore Ec]ducational Data">Explore the Data</button><!--Button that link to the table page-->
+            </div>
+            <div class="image-QA">
+                <img src="../images/home/QualityEducation01.png" alt="Quality educaton logo img">
+            </div>
+        </section>
+        
+        <!--Content section of the web page-->
+        <section class="content-card-section">
+            <h2>DISCOVER MORE ABOUT QUALITY EDUCATION</h2><!--Image for the content card-->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/home/targets.png" alt="Targets" class="card-img"><!--Image for the content card-->
+                    </div>
+                    <h3>TARGETS</h3>
+                    <p class="card-para">Quality education empowers individuals and communities. The targets focus on ensuring universal access to free education, promoting lifelong learning, and enhancing skills for all, especially youth and adults.</p>
+                    <a href="../html/content_ST1.html" class="read-more-button">See more</a>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/home/thingstodo.jpg" alt="Things To Do" class="card-img"><!--Image for the content card-->
+                    </div>
+                    <h3>THINGS TO DO</h3>
+                    <p class="card-para">Promote sustainability and compassion to protect marine life. Reduce plastic use, support sustainable seafood, and participate in beach cleanups.</p>
+                    <a href="../html/content_ST2.html" class="read-more-button">See more</a>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/home/edu.png" alt="Education initiatives" class="card-img"><!--Image for the content card-->
+                    </div>
+                    <h3>EDUCATION INITIATIVES</h3>
+                    <p class="card-para">Discover and support initiatives that promote inclusive, equitable, and quality education. These initiatives ensure that everyone, regardless of background, has the opportunity to learn and grow.</p>
+                    <a href="../html/content_ST3.html" class="read-more-button">See more</a>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/home/news.png" alt="News" class="card-img"><!--Image for the content card-->
+                    </div>
+                    <h3>NEWS</h3>
+                    <p class="card-para">Stay updated with the latest developments and innovations in the field of education. From new policies to global campaigns, discover how education is shaping a sustainable future.</p>
+                    <a href="../html/content_ST4.html" class="read-more-button">See more</a>
+                </div>
+            </div>
+        </section>
+        <!--Mission and Vision section of the web page-->
+        <section class="mission-vission">
+            <h2>OUR MISSION & VISION</h2>
+            <div class="MV-container">
+                <div class="mission">
+                    <h3>MISSION</h3>
+                    <p>"Our mission is to provide accessible, high-quality education to individuals and communities around the world, empowering them to achieve their full potential. Through innovative learning experiences and a commitment to inclusivity, we strive to foster a brighter, more sustainable future where everyone has the opportunity to thrive and contribute to society."</p>
+                </div>
+                <div class="vission">
+                    <h3>VISION</h3>
+                    <p>"Our vision is to create a world where education is a universal tool for growth and development. We aim to promote inclusive, equitable learning opportunities that empower individuals across all stages of life, driving sustainable change for communities and fostering lifelong learning that leads to positive global impact."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer the the page-->
+    <footer class="footer" id="footer">
+        <div class="global-footer">
+            <div class="footer-section"><!--Use div element for the sections for each prt-->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/home.html" >Home</a></li>
+                    <li><a href="../html/volunteer.html">Volunteer</a></li>
+                    <li><a href="../html/table.html">Table</a></li>
+                    <li><a href="../html/feedback.html" >Feedback</a></li>
+                    <li><a href="../html/sitemap.html">Sitemap</a></li>
+                    <li><a href="../html/team.html">About Us</a></li>
+                    <li><a href="../html/profile.html">User Profile</a></li>        
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Team</h3>
+                <ul>
+                    <!--Link each team member editor page-->
+                    <li><a href="../html/pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="../html/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="../html/pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="../html/pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Page Editor</h3>
+                <ul>
+                    <li><a href="../html/pageEditor_ST2.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/1223706751502130" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdg.goal4/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12785096/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@gmail.com</li>
+                    <li>Phone: 0705362187</li>
+                    <li>Addres: Colombo 7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quality Education. All rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script><!--Linking the cdn file for social media icons-->
+    <script src="../js/script.js"></script><!--Linking the javascript file-->
+
+</body>
+</html>

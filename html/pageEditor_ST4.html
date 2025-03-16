@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta information for encoding and responsivnss-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharun</title>
+    <link rel="stylesheet" href="../Styles/style.css"><!--Linking the style sheet-->
+    <link rel="stylesheet" href="../Styles/pageEditor_validator_ST4.css">
+    
+</head>
+<!--Body of the web page-->
+<body>
+    <!--Header section of the page-->
+    <header>
+        <div class="logo"><!--Dev element for the logo that link to home page-->
+            <a href="../html/home.html"><img src="../images/home/Logo.png" alt="Logo"></a>
+        </div>
+        <!--navigation bar-->
+        <nav>
+            <!--Link to each web page-->
+            <ul id="navigations">
+                <li><a href="../html/home.html" class="active">Home</a></li>
+                <li><a href="../html/volunteer.html" >Volunteer</a></li>
+                <li><a href="../html/table.html" >Table</a></li>
+                <li><a href="../html/feedback.html" >Feedback</a></li>
+                <li><a href="../html/sitemap.html" >Sitemap</a></li>
+                <li><a href="../html/team.html" >About Us</a></li> 
+                <li>
+                     <!--Profile Button-->
+                    <div class="mobile-login">
+                        <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                            <span>Profile</span>
+                            <span class="user-icon">
+                            <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                            </span>
+                        </button>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+
+        <!--Hamburger menu-->
+        <div class="hamburger-menu">
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+            <span class="rectangle"></span>
+        </div> 
+
+        <!--Profile Button-->
+        <div class="profile-btn-container">
+            <button class="profile-btn" onclick="window.location.href='../html/profile.html'">
+                <span>Profile</span>
+                <span class="user-icon">
+                    <img src="../images/template/60111.jpg" alt="Icon" class="user-image">
+                </span>
+            </button>
+        </div>
+    </header>
+    <section class="stud">
+        <div class="student-header">
+            <h1>Tharun Devaraja</h1>
+            <div class="role">Student 4</div>
+            <div class="id">20231447/w2120288</div>
+        </div>
+    </section>
+    <!-- Main content area -->
+    <main class="PE-main" id="top">
+        <div class="editor_container" >
+            <aside class="aside-div">
+                <section class="aside-section">
+                    <h3>Core pages developed:<br></h3>
+                    <ul class="top-level-ul">
+                        <!-- List of students and their core pages -->
+                        <li class="Student">Student 1
+                            <ul> 
+                                <li><a href="../html/pageEditor_ST1.html">Splash page</a></li>
+                                <li><a href="../html/pageEditor_ST1.html">Volunteer page</a></li>
+                                <li><a href="../html/pageEditor_ST1.html">Content page</a></li>
+                            </ul>
+                        </li>
+                        <li class="Student">Student 2
+                            <ul>
+                                <li><a href="../html/pageEditor_ST2.html">Home page </a></li>
+                                <li><a href="../html/pageEditor_ST2.html">Table page</a></li>
+                                <li><a href="../html/pageEditor_ST2.html">Content page</a></li>
+                            </ul>
+                        </li>
+                        <li class="Student">Student 3
+                            <ul>
+                                <li><a href="../html/pageEditor_ST3.html">Feedback page</a> </li>
+                                <li><a href="../html/pageEditor_ST3.html">Team page</a></li>
+                                <li><a href="../html/pageEditor_ST3.html">Content page</a></li>
+                            </ul>
+                        </li>
+                        <li class="Student">Student 4
+                            <ul>
+                                <li><a href="#profile">Profile page </a></li>
+                                <li><a href="#sitemap">Sitemap page</a></li>
+                                <li><a href="#content">Content page</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                        <li><a href="#compliance">Compliance</a></li>
+                        <li><a href="#ref">References</a></li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Main content section -->
+            <div class="main-content">
+                <section class="PE-section">
+                    <h2 id="profile">User Profile Page</h2> <!--User Profile Section-->
+                        <h3>Technical Description</h3><!-- Description of the user profile page -->
+                            <p>The user profile page shows the summary of a sample user's imfromation, which contains personal and profwessional imfromation, including their biography, skills, goals, challenges, work experience, and alignment with commitment to UN Sustainable Development Goals.
+                            <br>
+                                <ul>
+                                    <li><strong>Techniques & Technologies Used:</strong>
+                                        <ul>
+                                            <li><strong>HTML:</strong> Structured layout with sections for profile details, goals, interests, and a contact form.</li>
+                                            <li><strong>CSS:</strong> Styled using a grid layout for responsiveness, with hover effects and smooth transitions.</li>
+                                            <li><strong>JavaScript:</strong> Implemented a dynamic calendar that displays upcoming volunteer missions and validated the contact me section under standard validations.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p> 
+                        <h3>Accessibility</h3>
+                        <p><ul>
+                            <li><strong>Semantic HTML:</strong> Used appropriate tags for headings, lists, and sections.</li>
+                            <li><strong>Contrast & Readability:</strong> Ensured text is easy to read against the background.</li>
+                            <li><strong>Alternative Text for Images:</strong> Provided descriptive alt text for all images, making the content accessible to screen reader users </li>
+                        </ul></p>
+                    
+                        <section id="image-section">
+                            <br>
+                            <h3>Profile Image</h3><!-- Wave validation Profile -->
+                            <br>
+                            <img src="../images/pageEditor/ST4/userprofile_wave_validation.png" alt="User Profile Wave Validation" class="profile-image">
+                        </section>
+                        
+                        <br>
+                        <h3>Link to the validation page</h3> <!-- linked to profile validation page  -->
+                            <p><a href="../html/validation_ST4.html#profileVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <br>
+                        <h3>Link to the page</h3>
+                            <p><a href="../html/profile.html">Include a link to the actual page you describe.</a></p>
+                </section>
+                <section class="PE-section" >
+                    <h2 id="sitemap">Site Page</h2> <!--Sitemap Section-->
+                        <h3>Technical Description</h3><!-- Description of the user sitemap page -->
+                            <p>The sitemap page visually shows the site structure with interactive nodes linked by lines. Each node represents a page or section, is clickable, and has a tooltip. It uses SVG graphics for scalability and smooth animations for a more engaging experience.</p> 
+                                <ul>
+                                    <li><strong>Techniques & Technologies Used:</strong>
+                                        <ul>
+                                            <li><strong>HTML:</strong> Used SVG for the map and  &lt;a&gt; tags to make each node clickable.</li>
+                                            <li><strong>CSS:</strong> Custom colors, animations, and a responsive layout for all screen sizes.</li>
+                                            <li><strong>JavaScript:</strong> Enabled keyboard navigation for easier access by pressing "Enter" or "Space" on nodes.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </p>
+
+                        <h3>Accessibility</h3>
+                        <p><ul>
+                            <li><strong>Semantic HTML:</strong> The page uses appropriate HTML elements,including &lt;a&gt; for links, &lt;circle&gt; for nodes, and &lt;line&gt; for connections lines, ensuring it is accessible to screen readers.</li>
+                            <li><strong>Contrast & Readability:</strong> Ensured text is easy to read against the background.</li>
+                            <li><strong>Keyboard Navigation:</strong> Users can navigate through the sitemap using the keyboard alone. Pressing the "TAB" and "Enter" keys will activate the links. </li>
+                            <li><strong>Alternative Text for Images:</strong> Descriptive alt text is included for each interactive node.</li>
+                        </ul></p>  
+                        
+                        <section id="image-section">
+                            <br>
+                            <h3>Sitemap Image</h3><!-- Wave validation Sitemap -->
+                            <br>
+                            <img src="../images/pageEditor/ST4/sitemap_wave_validation.png" alt="Sitemap Wave Validation" class="sitemap-image">
+                        </section>
+                        <br>
+                        <h3>Link to the validation page</h3> <!-- linked to sitemap validation page  -->
+                            <p><a href="../html/validation_ST4.html#sitemapVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p>
+                        <br>
+                        <h3>Link to the page</h3>
+                            <p><a href="../html/sitemap.html">Include a link to the actual page you describe.</a></p>
+
+                </section>
+                <section class="PE-section">
+                    <h2 id="content">Content Page (News)</h2> <!--Content Page (News) Section-->
+                        <h3>Technical Description</h3><!-- Description of the user content page -->
+                        <p>The content page displays latest news about UN Sustainable Development Goals, featuring key stories and global efforts addressing these issues.</p> 
+                            <ul>
+                                <li><strong>Techniques & Technologies Used:</strong>
+                                    <ul>
+                                        <li><strong>HTML:</strong> Structured with sections for headlines, summaries, images, and links using semantic elements to enhance organization and clarity.</li>
+                                        <li><strong>CSS:</strong> tyled for responsiveness with media queries, hover effects, and smooth scrolling. A "Go to Top" button is implemented using only HTML and CSS, with smooth transitions for appearance and an accessibility-friendly aria-label.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                            
+                        <h3>Accessibility</h3>
+                        <p><ul>
+                            <li><strong>Semantic HTML:</strong> The page uses appropriate HTML elements, including <code>&lt;a&gt;</code> for links, <code>&lt;circle&gt;</code> for nodes, and <code>&lt;line&gt;</code> for connection lines, ensuring it is accessible to screen readers.</li>
+                            <li><strong>Contrast & Readability:</strong> Text is styled with sufficient contrast against the background to ensure it is readable by users with visual impairments.</li>
+                            <li><strong>Alternative Text for Images:</strong> Descriptive alt text is provided for each image to assist users with visual impairments.</li>
+                        </ul></p>  
+                        
+                        <section id="image-section">
+                            <br>
+                            <h3>Content Page Image</h3><!-- Wave validation content -->
+                            <br>
+                            <img src="../images/pageEditor/ST4/content_wave_validation.png" alt="Content Page Wave Validation" class="content-image">
+                        </section>
+                        <br>
+                        <h3>Link to the validation page</h3> <!-- linked to content validation page  -->
+                            <p><a href="../html/validation_ST4.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p>
+                        <br>
+                        <h3>Link to the page</h3>
+                            <p><a href="../html/content_ST4.html">Include a link to the actual page you describe.</a></p>
+                        <br>
+                </section>
+
+                <section class="PE-section"><!-- Challenges and Lessons Learned Section -->
+                    <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <br>
+                    <p><strong>1. Challenge:</strong> Ensuring responsiveness across different devices was tricky.</p>
+                    <ul>
+                      <li><strong>Solution:</strong> I used CSS media queries and flexible grid layouts to ensure the content adapts to various screen sizes.</li>
+                      <li><strong>Lesson Learned:</strong> Responsive design is crucial, and testing early on different devices helps avoid layout issues later.</li>
+                    </ul>
+                    <br>
+                    <p><strong>2. Challenge:</strong> Making the pages fully accessible was challenging, especially with ARIA roles and alt text for images.</p>
+                    <ul>
+                      <li><strong>Solution:</strong> I followed WCAG guidelines, added proper alt text, and used accessibility testing tools like WAVE.</li>
+                      <li><strong>Lesson Learned:</strong> Accessibility needs continuous attention to ensure all users, including those with disabilities, can access the content.</li>
+                    </ul>
+                </section>
+
+                <section class="PE-section"><!-- Compliance Section -->
+                    <h2 id="compliance"> Compliance</h2>
+                    <p>The pages I developed follow Janet regulations for web page publication in these ways:</p>
+                    <ul>
+                        <li><strong>Accessibility:</strong> Following WCAG 2.1 guidelines, with clear headings, alt text for images, and keyboard navigability.</li>
+                        <li><strong>Data Protection:</strong> Adhering to GDPR by ensuring privacy and consent in user data collection.</li>
+                        <li><strong>Security:</strong> Implementing secure data submission and external links opening in new tabs.</li>
+                        <li><strong>Usability:</strong> Ensuring responsive design for all devices and easy navigation, including a "Go to Top" button.</li>
+                    </ul>                
+                </section>
+
+                <section class="PE-section"><!-- References Section -->
+                    <h2 id="ref">References</h2>
+                        <ul class="ref">
+                            <li>iStock, 2025, <a href="https://www.istockphoto.com/" target="_blank" rel="noopener">iStock</a> (Accessed: 25 Feb 2025).</li>
+                            <li>United Nations, <a href="https://www.un.org/sustainabledevelopment/news/communications-material/" target="_blank" rel="noopener">Communications Material</a> (Accessed: 26 Feb 2025).</li>
+                            <li>United Nations, <a href="https://sdgs.un.org/news" target="_blank" rel="noopener">SDGs News</a> (Accessed: 28 Feb 2025).</li>
+                            <li>Freepik, <a href="https://www.freepik.com/" target="_blank" rel="noopener">Freepik</a> (Accessed: 7 March 2025).</li>
+                        </ul>           
+                </section>
+        </div>
+        <p class="top"><a href="#top">Go top</a></p>
+    </main>
+
+    <!--Footer the the page-->
+    <footer class="footer" id="footer">
+        <div class="global-footer">
+            <div class="footer-section"><!--Use div element for the sections for each prt-->
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../html/home.html" >Home</a></li>
+                    <li><a href="../html/volunteer.html">Volunteer</a></li>
+                    <li><a href="../html/table.html">Table</a></li>
+                    <li><a href="../html/feedback.html" >Feedback</a></li>
+                    <li><a href="../html/sitemap.html">Sitemap</a></li>
+                    <li><a href="../html/team.html">About Us</a></li>
+                    <li><a href="../html/profile.html">User Profile</a></li>        
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Team</h3>
+                <ul>
+                    <!--Link each team member editor page-->
+                    <li><a href="../html/pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="../html/pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="../html/pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="../html/pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Page Editor</h3>
+                <ul>
+                    <li><a href="../html/pageEditor_ST4.html">Page Editor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/groups/1223706751502130" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sdg.goal4/?hl=en" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/groups/12785096/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@gmail.com</li>
+                    <li>Phone: 0705362187</li>
+                    <li>Addres: Colombo 7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quality Education. All rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script><!--Linking the cdn file for social media icons-->
+    <script src="../js/script.js"></script><!--Linking the javascript file-->
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+:root{
+    --primary-color:#A40033;
+    --secondary-color:#c5192D;
+    --text-color:#ecf0f1;
+    --background-color:rgba(0, 0, 0, 0.9);
+    --color_01:#D50032;
+    --color_02:#f63c3ce0;
+    --button-color01:#cb3530;
+}
+
+/* Base styles */
+.stud{
+    margin-top: 60px; 
+    text-align: center;
+    height: auto; 
+    min-height: 10px;
+}
+
+.PE-section {
+    border: 2px solid #ccc;
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border-radius: 8px;
+    line-height: 1.5; 
+    overflow-wrap: break-word;
+}
+
+.PE-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.PE-section h2{
+    margin-bottom: 15px;
+    font-size: 1.5rem; 
+}
+
+.PE-section h3{
+    margin-bottom: 5px;
+    font-size: 1.2rem; 
+}
+
+/* Go Top Button */
+.top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+.top a {
+    padding: 8px 12px; 
+    background-color: #9f091d;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: block; 
+    opacity: 0.8; 
+}
+
+.top a:hover {
+    background-color: #da0007;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.editor_container {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px; 
+    gap: 15px;
+}
+
+.Student{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+aside {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    top: 0;
+    margin-bottom: 15px;
+}
+
+a{
+    color: #007bff;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+aside li {
+    font-size: 15px; 
+    color: #333;
+    margin-bottom: 8px;
+}
+
+aside li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+    display: inline-block;
+    padding: 3px 0; 
+}
+
+aside li a:hover {
+    color: var(--primary-color);
+}
+
+aside h3{
+    font-size: 17px;
+    color: #333;
+    margin-top: 0; 
+}
+
+/* Main content area for mobile*/
+.main-content {
+    width: 100%; 
+    background-color: #fff;
+    padding: 15px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headings for mobile */
+h2 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    color: #333;
+}
+
+/* Main Content Container */
+.main-content {
+    background: white;
+    padding: 15px; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h3 {
+    color: #333;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 15px; 
+    color: #555;
+}
+
+/* List Styling */
+ul {
+    margin-left: 15px; 
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 15px; 
+}
+
+/* Strong Text */
+strong {
+    color: #222;
+}
+
+/*Responsive images*/
+.profile-image,
+.sitemap-image,
+.content-image {
+    width: 85%; 
+    max-width: 400px; 
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Student header styling for mobile */
+.student-header h1 {
+    font-size: 1.8rem; 
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 6px rgba(255, 255, 255, 0.5);
+    word-wrap: break-word; 
+}
+
+.student-header .role {
+    font-size: 1.1rem; 
+    color: #b30202ef;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 6px rgba(255, 255, 255, 0.5);
+    word-wrap: break-word;
+}
+
+.student-header .id {
+    font-size: 1.1rem; 
+    color: #000000;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 6px rgba(255, 255, 255, 0.5);
+    word-wrap: break-word;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small tablets and large phones (≥576px) */
+@media (min-width: 576px) {
+    .stud {
+        margin-top: 70px;
+    }
+    
+    .PE-section {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+    
+    .editor_container {
+        padding: 15px;
+    }
+    
+    .Student {
+        font-size: 17px;
+    }
+    
+    .student-header h1 {
+        font-size: 2rem;
+    }
+    
+    .student-header .role,
+    .student-header .id {
+        font-size: 1.15rem;
+    }
+    
+    p {
+        font-size: 15.5px;
+    }
+}
+
+/* Medium tablets (≥768px) */
+@media (min-width: 768px) {
+    .stud {
+        margin-top: 80px;
+    }
+    
+    /* Start showing the editor container in horizontal layout */
+    .editor_container {
+        flex-direction: row;
+        padding: 15px;
+    }
+    
+    /* Adjust sidebar for horizontal layout */
+    aside {
+        flex: 1;
+        position: sticky; /* Return to sticky positioning */
+        top: 20px;
+        width: auto; /* Let flex determine width */
+    }
+    
+    /* Adjust main content for horizontal layout */
+    .main-content {
+        flex: 2;
+        padding: 18px;
+    }
+    
+    .PE-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .PE-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .student-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .student-header .role,
+    .student-header .id {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Large tablets and desktops (≥992px) */
+@media (min-width: 992px) {
+    .stud {
+        margin-top: 90px; 
+    }
+    
+    .PE-section {
+        padding: 20px; 
+        margin-bottom: 20px; 
+        line-height: 3.5vh; 
+    }
+    
+    .editor_container {
+        padding: 20px; 
+        gap: 20px; 
+    }
+    
+    .main-content {
+        flex: 3; 
+        padding: 20px; 
+    }
+    
+    .Student {
+        font-size: 18px; 
+    }
+    
+    aside {
+        padding: 20px; 
+    }
+    
+    aside h3 {
+        font-size: 18px; 
+    }
+    
+    aside li {
+        font-size: 16px;
+    }
+    
+    .student-header h1 {
+        font-size: 2.5rem;
+    
+    .student-header .role,
+    .student-header .id {
+        font-size: 1.25rem;
+    }
+    
+    .top a {
+        padding: 10px 20px; 
+    }
+    
+    /*Go Top button */
+    .top {
+        bottom: 5%;
+        right: 5%;
+    }
+}
+
+/* Additional media query adjustments for images */
+@media (min-width: 768px) {
+    .profile-image,
+    .sitemap-image,
+    .content-image {
+        width: 80%; /* Even smaller on tablets */
+        max-width: 380px;
+    }
+}
+
+@media (min-width: 992px) {
+    .profile-image,
+    .sitemap-image,
+    .content-image {
+        width: 75%; /* Smallest on desktop */
+        max-width: 350px;
+    }
+}
+}
