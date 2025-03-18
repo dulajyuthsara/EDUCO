@@ -37,7 +37,7 @@ The website includes the following pages, each assigned to a specific team membe
 
 ## Development Process
 
-The team collaborated on the overall design, content, and functionality of the website. Each member was responsible for developing specific components, ensuring a cohesive and well-integrated final product.
+The team collaborated on the overall design, content, and functionality of the website. Each member was responsible for developing specific part, ensuring well-integrated final product.
 
 ### Technologies Used
 
